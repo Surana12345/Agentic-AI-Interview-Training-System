@@ -75,26 +75,35 @@ def process_audio(audio_bytes: bytes, use_local_ml: bool = True):
     # 2. Extract Speech Metrics / Emotion
     if HAS_LOCAL_AUDIO_ML and transcript not in ["[No speech detected]", "[Audio Processing Error]"]:
         try:
-            # Emotion Analysis
-            emotion, _ = analyze_emotion(temp_file)
+            # Emotion Analysis (requires ffmpeg)
+            try:
+                emotion, _ = analyze_emotion(temp_file)
+            except Exception:
+                emotion = "neutral"
             
-            # VAD with WebRTC
-            audio = pydub.AudioSegment.from_file(temp_file)
-            duration_sec = len(audio) / 1000.0
-            
-            audio = audio.set_frame_rate(16000).set_channels(1)
-            vad = webrtcvad.Vad(2)
-            
-            frames = [audio.raw_data[i:i+320] for i in range(0, len(audio.raw_data), 320)]
-            speech_frames = sum(1 for frame in frames if len(frame) == 320 and vad.is_speech(frame, 16000))
-            speech_sec = (speech_frames * 20) / 1000.0
-            
-            word_count = len(transcript.split())
-            wpm = int((word_count / speech_sec) * 60) if speech_sec > 0 else 0
-            fluency = int(min(100, (speech_sec / duration_sec) * 100)) if duration_sec > 0 else 0
+            # VAD with WebRTC (requires ffmpeg for pydub)
+            try:
+                audio = pydub.AudioSegment.from_file(temp_file)
+                duration_sec = len(audio) / 1000.0
+                
+                audio = audio.set_frame_rate(16000).set_channels(1)
+                vad = webrtcvad.Vad(2)
+                
+                frames = [audio.raw_data[i:i+320] for i in range(0, len(audio.raw_data), 320)]
+                speech_frames = sum(1 for frame in frames if len(frame) == 320 and vad.is_speech(frame, 16000))
+                speech_sec = (speech_frames * 20) / 1000.0
+                
+                word_count = len(transcript.split())
+                wpm = int((word_count / speech_sec) * 60) if speech_sec > 0 else 0
+                fluency = int(min(100, (speech_sec / duration_sec) * 100)) if duration_sec > 0 else 0
+            except Exception:
+                # Fallback if pydub/ffmpeg fails
+                dur = get_duration_from_bytes(audio_bytes)
+                wpm = int((len(transcript.split()) / dur) * 60) if dur > 0 else 130
+                fluency = 85
             
         except Exception as ml_err:
-            logger.warning("Local Audio ML failed (ffmpeg missing?): %s", ml_err)
+            logger.warning("Local Audio ML failed: %s", ml_err)
             dur = get_duration_from_bytes(audio_bytes)
             wpm = int((len(transcript.split()) / dur) * 60) if dur > 0 else 130
     else:

@@ -11,7 +11,7 @@ logging.basicConfig(
 logger = logging.getLogger("ai_coach")
 
 # 1. FORCE imports (No try/except)
-from app.api import routes_intro, routes_debate, routes_interview, routes_dashboard, routes_auth, routes_orchestrator
+from app.api import routes_intro, routes_debate, routes_interview, routes_dashboard, routes_auth, routes_orchestrator, routes_realtime
 
 app = FastAPI(
     title="Agentic AI Coach API",
@@ -35,6 +35,7 @@ app.include_router(routes_intro.router, prefix="/api/intro", tags=["Intro"])
 app.include_router(routes_debate.router, prefix="/api/debate", tags=["Debate"])
 app.include_router(routes_interview.router, prefix="/api/interview", tags=["Interview"])
 app.include_router(routes_dashboard.router, prefix="/api/dashboard", tags=["Dashboard"])
+app.include_router(routes_realtime.router, prefix="/api/realtime", tags=["Realtime"])
 
 @app.get("/")
 def read_root():

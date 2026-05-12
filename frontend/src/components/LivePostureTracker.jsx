@@ -1,7 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Pose } from "@mediapipe/pose";
-import { FaceMesh } from "@mediapipe/face_mesh";
-import { Camera } from "@mediapipe/camera_utils";
 import * as tf from "@tensorflow/tfjs";
 import * as cocoSsd from "@tensorflow-models/coco-ssd";
 
@@ -151,7 +148,7 @@ const LivePostureTracker = ({ onStatsUpdate, isRecording, onVideoReady, onMultip
             }).catch(e => console.error("COCO-SSD error:", e));
         }
 
-        const pose = new Pose({
+        const pose = new window.Pose({
             locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/pose/${file}`,
         });
         poseRef.current = pose;
@@ -269,7 +266,7 @@ const LivePostureTracker = ({ onStatsUpdate, isRecording, onVideoReady, onMultip
             pushStats();
         });
 
-        const faceMesh = new FaceMesh({
+        const faceMesh = new window.FaceMesh({
             locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/${file}`,
         });
         faceMeshRef.current = faceMesh;
@@ -302,7 +299,7 @@ const LivePostureTracker = ({ onStatsUpdate, isRecording, onVideoReady, onMultip
             let lastFaceTime = 0;
             let lastObjectTime = 0;
 
-            const camera = new Camera(videoRef.current, {
+            const camera = new window.Camera(videoRef.current, {
                 onFrame: async () => {
                     const now = Date.now();
                     if (isProcessingFrame || now - lastFrameTime < 250) return;

@@ -3,7 +3,7 @@
 
 services:
   - type: web
-    name: agentic-ai-coach-backend
+    name: agentic-ai-interview-backend
     runtime: python
     region: oregon
     plan: free
@@ -14,7 +14,7 @@ services:
       - key: GOOGLE_API_KEY
         sync: false  # Must be set manually in Render dashboard
       - key: GEMINI_MODEL
-        value: gemini-2.0-flash
+        value: gemini-3.1-flash-lite-preview
       - key: JWT_SECRET_KEY
         generateValue: true  # Render auto-generates a secure random value
       - key: PYTHON_VERSION
