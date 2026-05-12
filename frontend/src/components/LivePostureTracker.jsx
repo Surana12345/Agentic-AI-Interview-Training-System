@@ -312,11 +312,12 @@ const LivePostureTracker = ({ onStatsUpdate, isRecording, onVideoReady, onMultip
                             await faceMeshRef.current.send({ image: videoRef.current });
                         }
                         
-                        // Object Detection for Cell Phone (~every 1 second)
-                        if (objectModelRef.current && now - lastObjectTime > 1000 && isRecordingRef.current) {
+                        // Object Detection for Cell Phone (~every 500ms)
+                        if (objectModelRef.current && now - lastObjectTime > 500 && isRecordingRef.current) {
                             lastObjectTime = now;
                             const predictions = await objectModelRef.current.detect(videoRef.current);
-                            const hasPhone = predictions.some(p => p.class === "cell phone" && p.score > 0.5);
+                            // Lower threshold to 0.4 for better mobile detection; include 'remote' as fallback
+                            const hasPhone = predictions.some(p => (p.class === "cell phone" || p.class === "remote") && p.score > 0.4);
                             if (hasPhone) {
                                 const c = frameCountersRef.current;
                                 if (now - lastPenaltyTimeRef.current.phone > 1000) {

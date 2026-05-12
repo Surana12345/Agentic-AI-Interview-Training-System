@@ -89,11 +89,10 @@ async def setup_node(state: EvaluationState) -> dict:
     content_metrics = analyze_content_comprehensive(user_transcript, all_keywords, mode)
     
     logger.info(
-        "Content metrics computed: readability=%s, vocab=%s, keywords=%s, star=%s, composite=%s",
+        "Content metrics computed: readability=%s, vocab=%s, keywords=%s, composite=%s",
         content_metrics["readability"]["readability_score"],
         content_metrics["vocabulary"]["vocab_score"],
         content_metrics["keywords"]["keyword_score"],
-        content_metrics["star_method"]["structure_score"],
         content_metrics["deterministic_content_score"],
     )
     
@@ -144,7 +143,7 @@ async def content_node(state: EvaluationState) -> dict:
     readability = content_metrics.get("readability", {})
     vocabulary = content_metrics.get("vocabulary", {})
     keywords = content_metrics.get("keywords", {})
-    star = content_metrics.get("star_method", {})
+
     word_count = content_metrics.get("word_count", 0)
     
     llm = ChatGoogleGenerativeAI(model=os.environ["GEMINI_MODEL"], temperature=0.7)
@@ -166,13 +165,6 @@ async def content_node(state: EvaluationState) -> dict:
         f"({keywords.get('coverage_pct', 0)}% of expected keywords matched)\n"
         f"  - Keywords Missed: {', '.join(keywords.get('missed', [])) or 'None'}\n"
     )
-    
-    if mode in ("interview", "intro"):
-        metrics_block += (
-            f"  - STAR Method: {', '.join(star.get('elements_found', [])) or 'None'} "
-            f"found | Missing: {', '.join(star.get('elements_missing', [])) or 'None'} "
-            f"({star.get('structure_score', 0)}/100)\n"
-        )
     
     relevance_instruction = ""
     if keywords.get("total_keywords", 0) > 0:
@@ -202,8 +194,7 @@ async def content_node(state: EvaluationState) -> dict:
         "4. Provide EXACTLY 3 `feedback_good` points and EXACTLY 3 `feedback_improve` points.\n"
         "5. BE ULTRA-CONCISE: Each point MUST be a single, short sentence (maximum 20-25 words). Do not write paragraphs.\n"
         "6. MANDATORY EVIDENCE: Very briefly integrate a short quote (2-4 words) to justify your point.\n"
-        "7. If the STAR method analysis shows missing elements, mention this in feedback_improve.\n"
-        "8. If advanced vocabulary is low, suggest using more sophisticated language.\n"
+        "7. If advanced vocabulary is low, suggest using more sophisticated language.\n"
     )
     
     chain = prompt | structured_llm
@@ -246,13 +237,10 @@ async def content_node(state: EvaluationState) -> dict:
         "tone": report_obj.content_agent.tone,
         # NEW fields
         "vocabulary_score": det_vocab,
-        "structure_score": star.get("structure_score", 0),
         "keyword_coverage": keywords.get("coverage_pct", 0),
         "readability_grade": readability.get("grade_level", 0),
         "word_count": word_count,
         "advanced_words_found": vocabulary.get("advanced_words_found", []),
-        "star_elements_found": star.get("elements_found", []),
-        "star_elements_missing": star.get("elements_missing", []),
     }
     
     return {
@@ -276,20 +264,18 @@ async def synthesis_node(state: EvaluationState) -> dict:
     posture_pct = scores.get("posture_pct", 85)
     eye_contact_pct = scores.get("eye_contact_pct", 85)
     
-    # NEW: Include vocabulary and structure in overall score
+    # NEW: Include vocabulary in overall score
     vocab_score = content.get("vocabulary_score", 50)
-    structure_score = content.get("structure_score", 50)
     
     overall = int(
-        (int(grammar) * 0.12) +
-        (int(relevance) * 0.18) +
-        (float(logic_avg) * 0.15) +
+        (int(grammar) * 0.15) +
+        (int(relevance) * 0.20) +
+        (float(logic_avg) * 0.18) +
         (float(fluency) * 0.12) +
         (float(posture_pct) * 0.12) +
-        (float(eye_contact_pct) * 0.08) +
+        (float(eye_contact_pct) * 0.10) +
         (max(0, 100 - int(fillers) * 10) * 0.03) +
-        (int(vocab_score) * 0.10) +      # NEW
-        (int(structure_score) * 0.10)     # NEW
+        (int(vocab_score) * 0.10)
     )
     final_conf = max(0, min(100, overall))
     

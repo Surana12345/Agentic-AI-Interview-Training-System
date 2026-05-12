@@ -43,35 +43,6 @@ ADVANCED_VOCABULARY = {
 
 
 # ────────────────────────────────────────────────────────────────
-# STAR Method Patterns
-# ────────────────────────────────────────────────────────────────
-STAR_PATTERNS = {
-    "situation": [
-        r"\b(situation|context|background|when i was|at my previous|in my role|"
-        r"there was a time|one example|for instance|in my last|at my company|"
-        r"during my|while working|i was working)\b"
-    ],
-    "task": [
-        r"\b(task|responsibility|goal|objective|challenge|problem|assigned|"
-        r"needed to|had to|was responsible|was tasked|my role was|"
-        r"the requirement|what was needed|i was asked)\b"
-    ],
-    "action": [
-        r"\b(i did|i implemented|i created|i designed|i built|i developed|"
-        r"i led|i managed|i analyzed|steps i took|my approach|i decided|"
-        r"i proposed|i organized|i solved|i wrote|i tested|i deployed|"
-        r"what i did|the approach|i started by|first i|then i)\b"
-    ],
-    "result": [
-        r"\b(result|outcome|impact|achieved|improved|reduced|increased|saved|"
-        r"successfully|led to|as a result|this resulted|the outcome|ended up|"
-        r"which meant|this helped|we were able|performance improved|"
-        r"delivered|completed|accomplished)\b"
-    ],
-}
-
-
-# ────────────────────────────────────────────────────────────────
 # 1. Grammar & Readability Analysis
 # ────────────────────────────────────────────────────────────────
 def analyze_grammar_readability(text: str) -> dict:
@@ -242,39 +213,6 @@ def analyze_keyword_coverage(text: str, expected_keywords: str) -> dict:
 
 
 # ────────────────────────────────────────────────────────────────
-# 4. STAR Method Detection
-# ────────────────────────────────────────────────────────────────
-def detect_star_method(text: str) -> dict:
-    """
-    Detect STAR framework elements (Situation, Task, Action, Result).
-    Returns which elements were found and a structure score.
-    """
-    if not text or len(text.split()) < 10:
-        return {
-            "elements_found": [], "elements_missing": list(STAR_PATTERNS.keys()),
-            "structure_score": 0, "has_complete_star": False,
-        }
-
-    text_lower = text.lower()
-    found, missing = [], []
-
-    for element, patterns in STAR_PATTERNS.items():
-        element_found = any(re.search(p, text_lower) for p in patterns)
-        (found if element_found else missing).append(element)
-
-    # Lenient STAR scoring: finding 3 out of 4 elements gives 100%
-    # finding 2 elements gives 70%
-    score_map = {0: 30, 1: 50, 2: 70, 3: 100, 4: 100}
-
-    return {
-        "elements_found": found,
-        "elements_missing": missing,
-        "structure_score": score_map.get(len(found), 30),
-        "has_complete_star": len(found) >= 3, # Consider 3/4 'complete enough'
-    }
-
-
-# ────────────────────────────────────────────────────────────────
 # 5. Comprehensive Analysis (main entry point)
 # ────────────────────────────────────────────────────────────────
 def extract_all_keywords(history: list) -> str:
@@ -307,9 +245,7 @@ def analyze_content_comprehensive(
     readability = analyze_grammar_readability(transcript)
     vocabulary = analyze_vocabulary_richness(transcript)
     keywords = analyze_keyword_coverage(transcript, expected_keywords)
-    star = detect_star_method(transcript) if mode in ("interview", "intro") else {
-        "structure_score": 0, "elements_found": [], "elements_missing": [], "has_complete_star": False
-    }
+
 
     word_count = len(transcript.split()) if transcript else 0
 
@@ -317,20 +253,18 @@ def analyze_content_comprehensive(
     r = readability["readability_score"]
     v = vocabulary["vocab_score"]
     k = keywords["keyword_score"]
-    s = star["structure_score"]
 
     if mode == "interview":
-        deterministic = int(r * 0.25 + v * 0.20 + k * 0.30 + s * 0.25)
+        deterministic = int(r * 0.35 + v * 0.30 + k * 0.35)
     elif mode == "debate":
-        deterministic = int(r * 0.30 + v * 0.35 + k * 0.15 + s * 0.20)
+        deterministic = int(r * 0.35 + v * 0.40 + k * 0.25)
     else:  # intro
-        deterministic = int(r * 0.35 + v * 0.30 + k * 0.10 + s * 0.25)
+        deterministic = int(r * 0.45 + v * 0.45 + k * 0.10)
 
     return {
         "word_count": word_count,
         "readability": readability,
         "vocabulary": vocabulary,
         "keywords": keywords,
-        "star_method": star,
         "deterministic_content_score": min(100, max(0, deterministic)),
     }

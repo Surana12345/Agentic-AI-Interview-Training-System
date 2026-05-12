@@ -120,7 +120,14 @@ async def start_interview(request: StartInterviewRequest, current_user: dict = D
         }
     except Exception as e:
         logger.error("Interview start error: %s", e)
-        return {"question": "Tell me about yourself.", "ai_greeting": "Ready when you are."}
+        # Fallback question if Gemini fails
+        q_text = "Tell me about your professional background and why you are interested in this role."
+        return {
+            "question": q_text,
+            "expected_keywords": "experience, skills, background",
+            "ideal_answer_summary": "Candidate should summarize their career and motivation.",
+            "ai_greeting": f"Welcome to the interview. Let's start with the first question: {q_text}"
+        }
 
 
 @router.post("/reply")
