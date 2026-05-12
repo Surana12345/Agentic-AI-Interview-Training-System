@@ -556,3 +556,7 @@ With these improvements, the system can evolve into a more advanced and comprehe
 The Agentic AI-Driven Interview Training System for communication skill enhancement implements a multi-agent architecture enabling realistic and dynamic interview simulations. It supports self-introduction, debate, and role-specific interview questioning through multimodal analysis for evaluating confidence, clarity, posture, and content relevance. AI-generated feedback provides actionable insights for continuous improvement. The system's ability to combine deterministic evaluation with intelligent generative feedback demonstrates the effectiveness of separating scoring from interpretation. Overall, the developed system reduces dependency on human interviewers, enables self-paced learning, and enhances interview readiness through continuous feedback and performance tracking. The self-paced practice environment reduces anxiety and boosts interview performance.
 
 ---
+
+This project demonstrates proficiency in **multi-modal AI system design**, **agentic AI orchestration** (LangGraph), **real-time computer vision** (MediaPipe), **NLP pipeline engineering** (deterministic + LLM hybrid scoring), **full-stack web development** (React + FastAPI), and **software engineering best practices** (modular architecture, testing, authentication, error handling).
+
+---
