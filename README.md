@@ -557,6 +557,6 @@ The Agentic AI-Driven Interview Training System for communication skill enhancem
 
 ---
 
-This project demonstrates proficiency in **multi-modal AI system design**, **agentic AI orchestration** (LangGraph), **real-time computer vision** (MediaPipe), **NLP pipeline engineering** (deterministic + LLM hybrid scoring), **full-stack web development** (React + FastAPI), and **software engineering best practices** (modular architecture, testing, authentication, error handling).
+_This project demonstrates proficiency in **multi-modal AI system design**, **agentic AI orchestration** (LangGraph), **real-time computer vision** (MediaPipe), **NLP pipeline engineering** (deterministic + LLM hybrid scoring), **full-stack web development** (React + FastAPI), and **software engineering best practices** (modular architecture, testing, authentication, error handling)._
 
 ---
