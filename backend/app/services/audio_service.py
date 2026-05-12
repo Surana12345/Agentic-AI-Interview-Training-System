@@ -58,7 +58,12 @@ def process_audio(audio_bytes: bytes, use_local_ml: bool = True):
 
     # 1. Transcribe Audio via Gemini
     client = genai.Client()
-    models_to_try = [os.environ.get("GEMINI_MODEL", "gemini-1.5-flash"), "gemini-1.5-flash", "gemini-1.5-pro"]
+    primary = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
+    fallback = os.environ.get("GEMINI_FALLBACK_MODEL", "gemini-1.5-flash")
+    
+    models_to_try = [primary]
+    if fallback and fallback != primary:
+        models_to_try.append(fallback)
     
     for model_name in models_to_try:
         try:

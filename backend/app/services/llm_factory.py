@@ -7,14 +7,12 @@ def get_llm_with_fallbacks(structured_output_schema=None, temperature=0.7):
     fallback to secondary models if the primary model fails.
     """
     primary_model = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
-    # List of reliable fallback models
-    fallback_candidates = ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-2.0-flash-exp"]
+    fallback_model = os.environ.get("GEMINI_FALLBACK_MODEL", "gemini-1.5-flash")
     
-    # Ensure the primary model is at the front and fallbacks are unique
+    # Ensure the primary and fallback are different
     models_to_try = [primary_model]
-    for m in fallback_candidates:
-        if m not in models_to_try:
-            models_to_try.append(m)
+    if fallback_model and fallback_model != primary_model:
+        models_to_try.append(fallback_model)
 
     def create_runnable(model_name):
         llm = ChatGoogleGenerativeAI(model=model_name, temperature=temperature)
