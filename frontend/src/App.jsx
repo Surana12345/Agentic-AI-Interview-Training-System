@@ -123,10 +123,13 @@ const AppLayout = () => {
     );
 };
 
+// GitHub Pages serves from /repo-name/ path, so React Router needs basename
+const BASENAME = import.meta.env.BASE_URL || '/';
+
 const App = () => {
     return (
         <AuthProvider>
-            <Router>
+            <Router basename={BASENAME}>
                 <Routes>
                     <Route path="/login" element={<LoginPage />} />
                     <Route path="/*" element={
