@@ -23,6 +23,7 @@ from app.services.evaluation_service import (
     build_posture_observations,
     build_emotion_agent
 )
+from app.services.llm_factory import get_llm_with_fallbacks
 
 # NEW: Deterministic content analysis
 from app.services.content_analysis_service import (
@@ -146,8 +147,7 @@ async def content_node(state: EvaluationState) -> dict:
 
     word_count = content_metrics.get("word_count", 0)
     
-    llm = ChatGoogleGenerativeAI(model=os.environ["GEMINI_MODEL"], temperature=0.7)
-    structured_llm = llm.with_structured_output(FeedbackReportOutput)
+    chain_with_fallbacks = get_llm_with_fallbacks(structured_output_schema=FeedbackReportOutput, temperature=0.7)
     
     coach_type = "interview coach" if mode == "interview" else "debate coach"
     
@@ -197,7 +197,7 @@ async def content_node(state: EvaluationState) -> dict:
         "7. If advanced vocabulary is low, suggest using more sophisticated language.\n"
     )
     
-    chain = prompt | structured_llm
+    chain = prompt | chain_with_fallbacks
     report_obj = await chain.ainvoke({
         "coach_type": coach_type,
         "transcript": transcript,

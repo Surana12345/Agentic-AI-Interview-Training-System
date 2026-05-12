@@ -4,6 +4,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langgraph.graph import StateGraph, START, END
 from pydantic import BaseModel, Field
+from app.services.llm_factory import get_llm_with_fallbacks
 
 # Define State
 class InterviewState(TypedDict):
@@ -24,13 +25,9 @@ class InterviewEvaluation(BaseModel):
     logic_score: int = Field(description="Score from 0 to 100 on answer relevance, depth, and keywords.")
     next_question: str = Field(description="The next follow-up question, or exactly 'INTERVIEW_COMPLETE'.")
 
-def get_llm():
-    # Use GEMINI_MODEL from .env
-    return ChatGoogleGenerativeAI(model=os.environ["GEMINI_MODEL"], temperature=0.7)
 
 def evaluate_and_generate(state: InterviewState):
-    llm = get_llm()
-    structured_llm = llm.with_structured_output(InterviewEvaluation)
+    chain_with_fallbacks = get_llm_with_fallbacks(structured_output_schema=InterviewEvaluation)
     
     turn_number = state.get("turn_number", 1)
     job_role = state.get("job_role", "Software Engineer")
@@ -52,7 +49,7 @@ def evaluate_and_generate(state: InterviewState):
         "2. {next_step}\n"
     )
 
-    chain = prompt | structured_llm
+    chain = prompt | chain_with_fallbacks
     
     result = chain.invoke({
         "job_role": job_role,

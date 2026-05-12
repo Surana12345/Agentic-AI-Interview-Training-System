@@ -56,20 +56,27 @@ def process_audio(audio_bytes: bytes, use_local_ml: bool = True):
         f.write(audio_bytes)
             
 
-    # STT with Whisper
-    # 1. Transcribe Audio via Gemini (MUCH Faster than CPU Whisper)
-    try:
-        client = genai.Client()
-        response = client.models.generate_content(
-            model=os.environ["GEMINI_MODEL"],
-            contents=[
-                "Transcribe this audio precisely. Do not add any extra text or formatting. Just the transcription.",
-                types.Part.from_bytes(data=audio_bytes, mime_type="audio/webm")
-            ]
-        )
-        transcript = response.text.strip() if response.text else "[No speech detected]"
-    except Exception as e:
-        logger.error("Gemini STT failed: %s", e)
+    # 1. Transcribe Audio via Gemini
+    client = genai.Client()
+    models_to_try = [os.environ.get("GEMINI_MODEL", "gemini-1.5-flash"), "gemini-1.5-flash", "gemini-1.5-pro"]
+    
+    for model_name in models_to_try:
+        try:
+            response = client.models.generate_content(
+                model=model_name,
+                contents=[
+                    "Transcribe this audio precisely. Do not add any extra text or formatting. Just the transcription.",
+                    types.Part.from_bytes(data=audio_bytes, mime_type="audio/webm")
+                ]
+            )
+            transcript = response.text.strip() if response.text else "[No speech detected]"
+            if transcript:
+                break # Success
+        except Exception as e:
+            logger.warning("Gemini STT with %s failed: %s", model_name, e)
+            continue
+            
+    if not transcript:
         transcript = "[Audio Processing Error]"
 
     # 2. Extract Speech Metrics / Emotion

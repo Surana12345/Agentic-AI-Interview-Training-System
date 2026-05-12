@@ -32,6 +32,7 @@ from app.services.evaluation_service import (
 )
 from app.services.audio_service import process_audio
 from app.services.nlp_service import calculate_relevance_score
+from app.services.llm_factory import get_llm_with_fallbacks
 
 load_dotenv()
 
@@ -105,11 +106,11 @@ async def start_interview(request: StartInterviewRequest, current_user: dict = D
         keywords = data['expected_keywords'] if data else ""
         summary = data['ideal_answer_summary'] if data else ""
 
-        llm = ChatGoogleGenerativeAI(model=os.environ["GEMINI_MODEL"])
+        llm_chain = get_llm_with_fallbacks()
         prompt_template = PromptTemplate.from_template(
             "Act as an HR Interviewer. Greet the candidate for the {role} role and ask: '{q_text}'. Keep it under 3 sentences."
         )
-        chain = prompt_template | llm
+        chain = prompt_template | llm_chain
         response = chain.invoke({"role": role, "q_text": q_text})
 
         return {
