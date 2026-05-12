@@ -1,0 +1,91 @@
+question_id,question_text,difficulty,expected_keywords,ideal_answer_summary
+1,What is the role of a product manager?,Easy,product strategy;roadmap;stakeholders;customer focus,A product manager defines product vision roadmap and aligns teams to deliver customer value.
+2,What is a product roadmap?,Easy,timeline;features;planning;strategy,A product roadmap outlines planned features and milestones over time.
+3,What is MVP?,Easy,minimum viable product;validation;early feedback,MVP is a basic version of product built to validate assumptions with minimal resources.
+4,What is product lifecycle?,Easy,introduction;growth;maturity;decline,Product lifecycle describes stages from launch to decline.
+5,What is user story?,Easy,agile;requirement;feature description,User story is a short description of feature from user perspective.
+6,What is backlog?,Easy,feature list;prioritization;tasks,Backlog is prioritized list of product features and tasks.
+7,What is sprint?,Easy,agile;iteration;time boxed,Sprint is a fixed time period to complete planned tasks.
+8,What is stakeholder management?,Easy,communication;alignment;expectations,Stakeholder management ensures alignment and clear communication.
+9,What is product vision?,Easy,long term goal;strategy;direction,Product vision defines long term purpose and direction.
+10,What is market research?,Easy,customer insights;competition;data analysis,Market research gathers data about customers and competitors.
+11,What is value proposition?,Easy,benefits;unique value;customer problem,Value proposition explains why customers should choose the product.
+12,What is competitive analysis?,Easy,benchmarking;market comparison;strategy,Competitive analysis evaluates competitor strengths and weaknesses.
+13,What is user persona?,Easy,customer profile;behavior;needs,User persona represents ideal customer characteristics.
+14,What is product requirement document?,Easy,PRD;features;specifications,PRD defines product features and technical requirements.
+15,What is A B testing?,Easy,experiment;comparison;optimization,A B testing compares two versions to improve performance.
+16,What is churn rate?,Easy,customer loss;retention;percentage,Churn rate measures customers leaving the product.
+17,What is KPI in product management?,Easy,metrics;performance;goals,KPIs measure product performance against objectives.
+18,What is customer journey?,Easy,touchpoints;experience;user flow,Customer journey maps user interaction with product.
+19,What is usability testing?,Easy,user feedback;experience;improvement,Usability testing evaluates product ease of use.
+20,What is agile methodology?,Easy,iterative;flexible;collaboration,Agile is iterative development approach with continuous feedback.
+21,What is scrum?,Easy,framework;roles;ceremonies,Scrum is agile framework with defined roles and ceremonies.
+22,What is product market fit?,Easy,demand;customer satisfaction;growth,Product market fit occurs when product satisfies strong market demand.
+23,What is feature prioritization?,Easy,impact;value;effort,Prioritization ranks features based on impact and effort.
+24,What is roadmap prioritization?,Easy,strategy;timeline;business goals,Roadmap prioritization aligns features with strategic goals.
+25,What is customer feedback loop?,Easy,continuous improvement;insights;iteration,Feedback loop gathers customer input for product improvement.
+26,What is wireframe?,Easy,design mockup;layout;prototype,Wireframe is basic visual layout of product interface.
+27,What is prototype?,Easy,early model;testing;validation,Prototype is early product model for testing ideas.
+28,What is product analytics?,Easy,data tracking;user behavior;metrics,Product analytics analyzes user data to improve decisions.
+29,What is retention rate?,Easy,repeat usage;customer loyalty;percentage,Retention rate measures how many users continue using product.
+30,What is go to market strategy?,Easy,launch plan;positioning;target audience,Go to market strategy defines how product is launched and promoted.
+31,How do you prioritize features?,Medium,RICE;impact;effort;value,Prioritize features using frameworks like RICE based on impact and effort.
+32,Explain RICE framework.,Medium,reach;impact;confidence;effort,RICE scores features using reach impact confidence and effort.
+33,How do you measure product success?,Medium,KPIs;growth;engagement metrics,Product success measured using growth engagement and revenue metrics.
+34,Explain north star metric.,Medium,core metric;long term growth;focus,North star metric represents single most important success metric.
+35,How do you conduct user research?,Medium,interviews;surveys;data analysis,User research involves interviews surveys and analytics.
+36,Explain product discovery process.,Medium,problem validation;user research;experimentation,Discovery validates problems and tests solutions before development.
+37,How do you handle stakeholder conflict?,Medium,communication;negotiation;alignment,Resolve conflict through negotiation and shared goals.
+38,What is cohort analysis?,Medium,user segmentation;retention;behavior patterns,Cohort analysis groups users to analyze behavior over time.
+39,Explain OKRs in product management.,Medium,objectives;key results;alignment,OKRs align product goals with measurable outcomes.
+40,How do you define product metrics?,Medium,tracking;KPIs;business goals,Metrics defined based on product goals and customer impact.
+41,Explain MVP vs prototype.,Medium,validation;testing;scope,MVP tests real users while prototype tests concept.
+42,How do you reduce churn?,Medium,customer feedback;engagement;improvements,Reduce churn by improving product value and support.
+43,Explain roadmap planning process.,Medium,vision alignment;prioritization;timeline,Roadmap planning aligns features with strategy and timeline.
+44,What is growth hacking in product?,Medium,experimentation;rapid growth;data driven,Growth hacking uses experiments to accelerate growth.
+45,How do you evaluate feature impact?,Medium,analytics;user feedback;business value,Evaluate impact using data and customer insights.
+46,Explain product positioning strategy.,Medium,market differentiation;value proposition;targeting,Positioning defines product differentiation and messaging.
+47,How do you conduct competitive analysis?,Medium,benchmarking;SWOT;market research,Analyze competitors using SWOT and benchmarking.
+48,What is customer segmentation?,Medium,demographics;behavior;targeting,Segment customers to tailor product features.
+49,Explain lean product development.,Medium,iteration;feedback;efficiency,Lean focuses on building small testing and iterating quickly.
+50,How do you handle failed feature launch?,Medium,analysis;feedback;iteration,Analyze failure gather feedback and improve.
+51,Explain product scalability considerations.,Medium,infrastructure;performance;growth planning,Scalability ensures product handles growth efficiently.
+52,How do you define pricing strategy?,Medium,value based;market research;competition,Pricing aligns with value and market conditions.
+53,Explain product adoption metrics.,Medium,activation;engagement;retention,Adoption metrics measure how users start and continue usage.
+54,How do you manage cross functional teams?,Medium,communication;alignment;collaboration,Ensure collaboration between engineering design and marketing.
+55,Explain release management.,Medium,planning;testing;deployment,Release management coordinates product updates safely.
+56,How do you collect qualitative data?,Medium,interviews;focus groups;feedback,Qualitative data gathered from user conversations.
+57,Explain feature trade off decisions.,Medium,impact;effort;business goals,Trade offs balance value effort and risk.
+58,How do you measure user engagement?,Medium,DAU;MAU;session time,Engagement measured using daily and monthly active users.
+59,Explain customer lifetime value.,Medium,CLV;revenue;retention,CLV estimates total revenue per customer.
+60,How do you align product with business strategy?,Medium,goals;KPIs;roadmap alignment,Align roadmap and metrics with company objectives.
+61,Design a new product from scratch.,Hard,market research;MVP;roadmap;launch,Design involves research validation MVP build and launch strategy.
+62,How would you achieve product market fit?,Hard,user feedback;iteration;value delivery,Achieve fit through testing refining and solving core problem.
+63,Explain product strategy development.,Hard,vision;competitive advantage;long term planning,Strategy defines direction differentiation and growth plan.
+64,How do you scale a product globally?,Hard,localization;infrastructure;market adaptation,Global scaling requires localization and scalable systems.
+65,Design retention strategy for SaaS product.,Hard,engagement;personalization;customer success,Retention strategy focuses on engagement onboarding and support.
+66,How would you manage product pivot?,Hard,data analysis;customer feedback;strategy shift,Pivot requires evaluating data and redefining strategy.
+67,Explain monetization strategy options.,Hard,subscription;freemium;ads;pricing,Monetization includes subscriptions freemium or advertising models.
+68,How do you measure innovation success?,Hard,experimentation;KPIs;market response,Innovation measured by adoption and impact.
+69,Design marketplace platform strategy.,Hard,supply demand balance;network effects;growth,Marketplace requires balancing supply demand and incentives.
+70,How would you reduce customer churn significantly?,Hard,analytics;customer segmentation;product improvement,Use analytics and personalization to improve retention.
+71,Explain advanced product analytics framework.,Hard,data pipelines;metrics hierarchy;experimentation,Framework integrates tracking metrics and experiments.
+72,How do you handle technical debt in roadmap?,Hard,prioritization;engineering alignment;long term impact,Address technical debt through strategic planning.
+73,Design pricing experiment.,Hard,A B testing;segmentation;revenue optimization,Run experiments to optimize pricing strategy.
+74,How would you launch product in competitive market?,Hard,differentiation;positioning;marketing plan,Launch requires clear positioning and strong marketing.
+75,Explain risk management in product development.,Hard,risk identification;mitigation;contingency planning,Manage risks through proactive identification and mitigation.
+76,How do you drive data driven decisions?,Hard,analytics;KPIs;experimentation,Use metrics and experiments to guide decisions.
+77,Design user acquisition strategy.,Hard,channels;budget;conversion optimization,Acquisition strategy focuses on cost effective growth channels.
+78,Explain stakeholder influence strategy.,Hard,communication;alignment;negotiation,Influence stakeholders through data and collaboration.
+79,How do you measure feature ROI?,Hard,revenue impact;cost analysis;KPIs,Feature ROI measured by revenue and cost comparison.
+80,Design product dashboard for executives.,Hard,KPIs;visualization;real time data,Dashboard highlights strategic metrics clearly.
+81,Explain growth strategy for mature product.,Hard,market expansion;upsell;innovation,Growth may come from new markets or features.
+82,How do you handle crisis in product release?,Hard,communication;rollback;analysis,Manage crisis with quick action and transparent updates.
+83,Design onboarding strategy.,Hard,user activation;education;engagement,Onboarding ensures users quickly realize value.
+84,Explain customer centric product development.,Hard,user research;feedback loops;iteration,Customer centric development focuses on solving real user problems.
+85,How do you evaluate new market opportunity?,Hard,market size;competition;feasibility,Evaluate opportunity using market and financial analysis.
+86,Design product experimentation roadmap.,Hard,hypothesis testing;prioritization;analytics,Experimentation roadmap outlines tests to validate growth.
+87,Explain product governance framework.,Hard,compliance;decision rights;process control,Governance defines responsibilities and oversight.
+88,How do you manage product portfolio?,Hard,resource allocation;prioritization;strategy alignment,Portfolio management balances multiple products strategically.
+89,Design AI powered product strategy.,Hard,data integration;automation;user value,AI strategy integrates data to deliver personalized experiences.
+90,Explain future trends in product management.,Hard,AI driven insights;customer centricity;data analytics,Future trends focus on AI analytics and user driven innovation.

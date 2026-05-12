@@ -1,0 +1,415 @@
+.container {
+    background-color: #080808;
+    padding: 28px;
+    border-radius: 16px;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #151520;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.headerTitle {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f8fafc;
+    letter-spacing: -0.3px;
+}
+
+.headerSub {
+    margin: 6px 0 0;
+    font-size: 0.88rem;
+    color: #64748b;
+}
+
+/* ═══ Hero Score Banner ═══ */
+.scoreBanner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #0c4a6e 0%, #0ea5e9 50%, #38bdf8 100%);
+    border-radius: 14px;
+    padding: 28px 36px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.scoreBanner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+}
+
+.scoreLeft {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.scoreNumber {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.scoreLabel {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 6px;
+}
+
+.scoreBadge {
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.scoreRight {
+    display: flex;
+    gap: 32px;
+}
+
+.scoreMiniStat {
+    text-align: center;
+}
+
+.scoreMiniLabel {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.scoreMiniValue {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* ═══ Agent Grid: 3 columns ═══ */
+.agentGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .agentGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .agentGrid {
+        grid-template-columns: 1fr;
+    }
+    .scoreBanner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 24px 20px;
+    }
+    .scoreLeft { flex-direction: column; }
+    .scoreRight { gap: 20px; }
+}
+
+.agentCard {
+    background-color: #0b0b10;
+    border: 1px solid #1a1a2e;
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.agentCard:hover {
+    border-color: #38bdf840;
+    transform: translateY(-2px);
+}
+
+.agentHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #1a1a2e;
+}
+
+.agentIcon {
+    font-size: 1.1rem;
+}
+
+.agentTitle {
+    margin: 0;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+.agentBody {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    flex: 1;
+}
+
+.statRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #111118;
+}
+
+.statRow:last-child {
+    border-bottom: none;
+}
+
+.statLabel {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+.statValue {
+    font-size: 0.9rem;
+    font-weight: 600;
+    max-width: 60%;
+    text-align: right;
+    word-break: break-word;
+}
+
+.statBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 6px;
+    border-bottom: 1px solid #111118;
+}
+
+.statBlock:last-child {
+    border-bottom: none;
+}
+
+.statBlockValue {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* ═══ Content Insights Panel ═══ */
+.insightsPanel {
+    background-color: #0b0b10;
+    border: 1px solid #1a1a2e;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 3px solid #38bdf8;
+}
+
+.insightsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 640px) {
+    .insightsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.insightItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.insightLabel {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.insightValue {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+.pillContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.pill {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid;
+    letter-spacing: 0.2px;
+}
+
+/* ═══ Feedback Row ═══ */
+.feedbackRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+    .feedbackRow {
+        grid-template-columns: 1fr;
+    }
+}
+
+.feedbackCard {
+    background-color: #0b0b10;
+    border: 1px solid #1a1a2e;
+    border-radius: 14px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedbackCardGood {
+    composes: feedbackCard;
+    border-left: 3px solid #10b981;
+}
+
+.feedbackCardImprove {
+    composes: feedbackCard;
+    border-left: 3px solid #f59e0b;
+}
+
+.feedbackHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #1a1a2e;
+}
+
+.feedbackTitle {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+.feedbackCount {
+    margin-left: auto;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.06);
+    color: #94a3b8;
+}
+
+.feedbackList {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.feedbackItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #111118;
+    line-height: 1.6;
+}
+
+.feedbackItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.feedbackNum {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.feedbackNumGood {
+    composes: feedbackNum;
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.feedbackNumImprove {
+    composes: feedbackNum;
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.feedbackText {
+    font-size: 0.88rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.emptyText {
+    color: #3f3f5e;
+    font-size: 0.88rem;
+    font-style: italic;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.ctaContainer {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.retryBtn {
+    background-color: #38bdf8;
+    color: #000000;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
+}
+
+.retryBtn:hover {
+    background-color: #0284c7;
+    box-shadow: 0 6px 16px rgba(56, 189, 248, 0.4);
+}

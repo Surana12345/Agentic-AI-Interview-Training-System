@@ -1,0 +1,91 @@
+question_id,question_text,difficulty,expected_keywords,ideal_answer_summary
+1,What is software testing?,Easy,quality assurance;bug detection;validation,Software testing is the process of verifying and validating software to ensure it meets requirements.
+2,What is manual testing?,Easy,manual execution;test cases;no automation,Manual testing involves executing test cases without automation tools.
+3,What is automated testing?,Easy,automation tools;scripts;efficiency,Automated testing uses tools and scripts to execute test cases.
+4,What is a test case?,Easy,steps;expected result;validation,A test case defines steps and expected results to verify functionality.
+5,What is a bug?,Easy,defect;error;unexpected behavior,A bug is a defect causing incorrect or unexpected behavior.
+6,What is regression testing?,Easy,retesting;code changes;stability,Regression testing ensures new changes do not break existing functionality.
+7,What is unit testing?,Easy,small component testing;developer testing,Unit testing verifies individual components of software.
+8,What is integration testing?,Easy,module interaction;data flow,Integration testing checks interaction between modules.
+9,What is system testing?,Easy,end to end testing;complete system,System testing validates the complete integrated system.
+10,What is acceptance testing?,Easy,user validation;requirement verification,Acceptance testing ensures software meets business requirements.
+11,What is black box testing?,Easy,functional testing;no internal knowledge,Black box testing tests functionality without knowing internal code.
+12,What is white box testing?,Easy,code level testing;internal structure,White box testing examines internal code structure.
+13,What is smoke testing?,Easy,build verification;basic functionality,Smoke testing verifies basic functionality of new build.
+14,What is sanity testing?,Easy,minor changes;focused testing,Sanity testing checks specific functionality after small changes.
+15,What is test plan?,Easy,scope;strategy;resources,A test plan outlines testing approach scope and schedule.
+16,What is test scenario?,Easy,high level testing;feature validation,A test scenario describes high level functionality to test.
+17,What is defect lifecycle?,Easy,new;assigned;fixed;closed,Defect lifecycle tracks bug status from discovery to closure.
+18,What is alpha testing?,Easy,internal testing;pre release,Alpha testing is internal testing before external release.
+19,What is beta testing?,Easy,user testing;real environment,Beta testing is conducted by real users before official launch.
+20,What is usability testing?,Easy,user experience;ease of use,Usability testing checks user friendliness.
+21,What is performance testing?,Easy,load;stress;response time,Performance testing measures speed and stability under load.
+22,What is load testing?,Easy,normal traffic;capacity testing,Load testing checks system performance under expected load.
+23,What is stress testing?,Easy,extreme load;breaking point,Stress testing evaluates system under extreme conditions.
+24,What is test automation framework?,Easy,structured automation;reusable scripts,Automation framework provides structure for test scripts.
+25,What is API testing?,Easy,endpoint validation;request response,API testing validates backend services.
+26,What is exploratory testing?,Easy,ad hoc testing;experience based,Exploratory testing involves unscripted testing based on intuition.
+27,What is boundary value analysis?,Easy,edge cases;input limits,Boundary value analysis tests input limits.
+28,What is equivalence partitioning?,Easy,input grouping;test efficiency,Equivalence partitioning divides inputs into valid and invalid groups.
+29,What is test coverage?,Easy,percentage;code coverage;requirement coverage,Test coverage measures extent of testing performed.
+30,What is bug report?,Easy,defect description;steps;severity,A bug report documents issue details and reproduction steps.
+31,Explain test driven development.,Medium,TDD;write test first;development cycle,TDD involves writing tests before writing code.
+32,What is continuous testing?,Medium,CI CD;automation;early feedback,Continuous testing integrates testing in CI CD pipeline.
+33,Explain difference between severity and priority.,Medium,impact;urgency;bug management,Severity indicates impact priority indicates urgency.
+34,What is test strategy?,Medium,overall approach;types of testing;planning,Test strategy defines high level testing approach.
+35,What is data driven testing?,Medium,test data;automation;parameterization,Data driven testing runs tests with multiple data sets.
+36,Explain risk based testing.,Medium,risk assessment;priority;critical areas,Risk based testing focuses on high risk features.
+37,What is static testing?,Medium,code review;no execution;analysis,Static testing reviews code without executing it.
+38,What is dynamic testing?,Medium,execution;runtime validation,Dynamic testing involves executing the software.
+39,Explain non functional testing.,Medium,performance;security;usability,Non functional testing validates system attributes.
+40,What is security testing?,Medium,vulnerability;penetration testing;data protection,Security testing identifies vulnerabilities.
+41,What is compatibility testing?,Medium,browser testing;device testing;environment,Compatibility testing ensures software works across environments.
+42,Explain test metrics.,Medium,defect density;coverage;pass rate,Test metrics measure quality and efficiency.
+43,What is defect density?,Medium,bugs per module;quality measurement,Defect density measures defects per code unit.
+44,What is root cause analysis?,Medium,problem investigation;defect prevention,Root cause analysis identifies underlying causes of defects.
+45,Explain automation testing tools.,Medium,selenium;junit;testng,Automation tools help execute automated tests efficiently.
+46,What is parallel testing?,Medium,multiple environments;comparison testing,Parallel testing runs old and new systems together.
+47,Explain test estimation.,Medium,time estimation;effort calculation;planning,Test estimation predicts testing time and resources.
+48,What is configuration testing?,Medium,hardware;software configuration;compatibility,Configuration testing validates different setups.
+49,Explain defect triage process.,Medium,prioritization;review meeting;resolution,Defect triage prioritizes and assigns bugs.
+50,What is agile testing?,Medium,continuous feedback;iteration;collaboration,Agile testing integrates testing into development cycles.
+51,Explain shift left testing.,Medium,early testing;development phase;quality,Shift left testing starts testing early in development.
+52,What is API automation testing?,Medium,automation scripts;endpoint testing,API automation uses scripts to test services.
+53,Explain cross browser testing.,Medium,compatibility;UI validation;multiple browsers,Cross browser testing ensures consistent behavior.
+54,What is regression suite?,Medium,collection of tests;automation;maintenance,Regression suite contains tests for repeated execution.
+55,Explain performance metrics.,Medium,response time;throughput;latency,Performance metrics measure system responsiveness.
+56,What is penetration testing?,Medium,security testing;ethical hacking;vulnerability,Penetration testing simulates attacks to find weaknesses.
+57,Explain test environment setup.,Medium,hardware;software;data configuration,Test environment replicates production setup.
+58,What is continuous integration testing?,Medium,automated builds;testing pipeline,CI testing runs automated tests on each build.
+59,Explain mock testing.,Medium,simulation;dependency isolation;unit testing,Mock testing simulates external dependencies.
+60,What is defect leakage?,Medium,missed defects;production bugs,Defect leakage occurs when bugs escape to production.
+61,Design test strategy for e commerce platform.,Hard,functional testing;performance;security;automation,Test strategy includes functional non functional and automation coverage.
+62,How do you test microservices architecture?,Hard,API testing;integration;service isolation,Test microservices via API tests and integration tests.
+63,Explain advanced automation framework design.,Hard,modular framework;data driven;maintainability,Advanced frameworks use modular and scalable design.
+64,How do you ensure high test coverage?,Hard,automation;review;continuous testing,Ensure coverage through automation and reviews.
+65,Explain performance bottleneck identification.,Hard,profiling;monitoring;analysis,Identify bottlenecks using monitoring tools.
+66,How do you handle flaky tests?,Hard,stability;root cause;maintenance,Flaky tests require stabilization and root cause analysis.
+67,Design CI CD testing pipeline.,Hard,automation;integration;deployment,Pipeline integrates automated tests with builds.
+68,Explain test automation scalability.,Hard,parallel execution;framework optimization,Scalable automation uses parallel runs and optimized scripts.
+69,How do you test real time systems?,Hard,latency;performance;concurrency,Real time testing focuses on latency and concurrency.
+70,Explain security testing strategy.,Hard,vulnerability scanning;penetration;compliance,Security strategy includes scanning and penetration testing.
+71,How do you validate data integrity?,Hard,database validation;consistency checks,Validate data using consistency and reconciliation checks.
+72,Design mobile testing strategy.,Hard,device compatibility;performance;automation,Mobile strategy includes device coverage and automation.
+73,Explain chaos testing.,Hard,system resilience;failure simulation,Chaos testing evaluates system resilience under failures.
+74,How do you manage test data at scale?,Hard,data generation;privacy;masking,Manage data with generation tools and masking.
+75,Explain reliability testing.,Hard,stability;long duration testing,Reliability testing ensures stability over time.
+76,How do you test distributed systems?,Hard,consistency;latency;integration,Test distributed systems for consistency and reliability.
+77,Explain defect prevention techniques.,Hard,process improvement;root cause analysis,Prevent defects using process improvements.
+78,Design security automation pipeline.,Hard,scanning;automation;CI integration,Integrate security testing into CI pipeline.
+79,How do you measure test effectiveness?,Hard,coverage;defect detection rate,Effectiveness measured through metrics and defect trends.
+80,Explain failover testing.,Hard,backup systems;high availability,Failover testing ensures system recovers from failure.
+81,How do you optimize automation maintenance?,Hard,modular scripts;refactoring;framework design,Optimize maintenance with reusable components.
+82,Explain big data testing challenges.,Hard,data volume;performance;validation,Big data testing handles large datasets and accuracy.
+83,How do you test cloud applications?,Hard,scalability;security;performance,Cloud testing focuses on scalability and compliance.
+84,Explain test governance.,Hard,standards;compliance;process control,Test governance ensures standardized testing processes.
+85,How do you perform end to end testing in complex systems?,Hard,integration;workflow validation;automation,End to end testing validates full workflow.
+86,Explain API contract testing.,Hard,service agreement;validation;integration,Contract testing ensures API compatibility.
+87,How do you implement AI in testing?,Hard,test case generation;automation;analytics,AI improves test generation and defect prediction.
+88,Explain observability in testing.,Hard,logging;monitoring;trace analysis,Observability helps detect production issues.
+89,How do you handle production defect crisis?,Hard,root cause;hotfix;communication,Handle crisis through quick resolution and analysis.
+90,Explain future trends in software testing.,Hard,AI testing;automation;continuous quality,Future testing trends include AI driven automation.

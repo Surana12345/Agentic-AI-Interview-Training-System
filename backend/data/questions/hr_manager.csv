@@ -1,0 +1,91 @@
+question_id,question_text,difficulty,expected_keywords,ideal_answer_summary
+1,What is the role of an HR manager?,Easy,recruitment;employee relations;policy;compliance,An HR manager oversees recruitment employee relations policy implementation and ensures legal compliance.
+2,What is recruitment?,Easy,hiring;talent acquisition;selection process,Recruitment is the process of identifying attracting and hiring suitable candidates.
+3,What is onboarding?,Easy,orientation;training;integration,Onboarding introduces new employees to company culture policies and job responsibilities.
+4,What is employee engagement?,Easy,motivation;satisfaction;productivity,Employee engagement refers to employees commitment and involvement in their work.
+5,What is performance appraisal?,Easy,evaluation;feedback;goals,Performance appraisal is the formal assessment of an employees performance.
+6,What is HR compliance?,Easy,labor laws;policies;regulations,HR compliance ensures company follows labor laws and regulations.
+7,What is payroll management?,Easy,salary;compensation;tax deductions,Payroll management handles salary processing tax deductions and benefits.
+8,What is talent management?,Easy,development;retention;succession planning,Talent management focuses on developing and retaining employees.
+9,What is employee retention?,Easy,turnover;job satisfaction;loyalty,Employee retention strategies reduce turnover and improve satisfaction.
+10,What is workplace diversity?,Easy,inclusion;equal opportunity;culture,Diversity promotes equal opportunities and inclusive workplace culture.
+11,What is job description?,Easy,roles;responsibilities;requirements,A job description outlines duties responsibilities and qualifications for a role.
+12,What is training and development?,Easy,skill enhancement;learning;growth,Training and development improves employee skills and career growth.
+13,What is compensation?,Easy,salary;benefits;rewards,Compensation includes salary bonuses and benefits offered to employees.
+14,What is employee grievance?,Easy,complaint;conflict resolution;workplace issue,Employee grievance refers to workplace complaints or disputes.
+15,What is HR policy?,Easy,guidelines;rules;procedures,HR policies define workplace rules and procedures.
+16,What is succession planning?,Easy,future leadership;replacement planning;talent pipeline,Succession planning prepares employees for future leadership roles.
+17,What is exit interview?,Easy,feedback;resignation;improvement,Exit interviews collect feedback from departing employees.
+18,What is organizational culture?,Easy,values;beliefs;work environment,Organizational culture represents shared values and work environment.
+19,What is probation period?,Easy,evaluation;trial phase;performance review,Probation period is a trial phase to assess employee suitability.
+20,What is workforce planning?,Easy,staffing needs;forecasting;strategy,Workforce planning forecasts staffing needs to meet business goals.
+21,What is job analysis?,Easy,role evaluation;skills;requirements,Job analysis identifies tasks skills and requirements of a position.
+22,What is HRIS?,Easy,human resource system;data management;automation,HRIS is a system for managing employee data and HR processes.
+23,What is absenteeism?,Easy,attendance;leave;workforce impact,Absenteeism refers to frequent absence from work.
+24,What is employee turnover?,Easy,resignations;replacement;retention,Employee turnover measures the rate of employees leaving the company.
+25,What is employer branding?,Easy,company image;talent attraction;reputation,Employer branding promotes company reputation to attract talent.
+26,What is workplace ethics?,Easy,integrity;conduct;compliance,Workplace ethics refer to moral principles guiding employee behavior.
+27,What is a performance improvement plan?,Easy,PIP;performance issues;corrective action,A performance improvement plan outlines steps to improve employee performance.
+28,What is benefits administration?,Easy,insurance;leave policy;compensation,Benefits administration manages employee benefits programs.
+29,What is conflict resolution?,Easy,mediation;communication;problem solving,Conflict resolution involves resolving workplace disputes effectively.
+30,What is employee motivation?,Easy,incentives;engagement;productivity,Employee motivation drives productivity through recognition and incentives.
+31,How do you handle workplace conflict?,Medium,mediation;communication;resolution strategy,Handle conflict through open communication mediation and fair resolution.
+32,Explain performance management process.,Medium,goal setting;feedback;evaluation,Performance management includes setting goals continuous feedback and evaluation.
+33,How do you improve employee engagement?,Medium,feedback;recognition;career growth,Improve engagement through recognition development opportunities and communication.
+34,How do you ensure HR compliance?,Medium,audit;policy updates;legal monitoring,Ensure compliance by monitoring laws updating policies and conducting audits.
+35,What is competency mapping?,Medium,skills assessment;role alignment;development,Competency mapping identifies skills required for roles and aligns employees accordingly.
+36,How do you design a training program?,Medium,needs analysis;learning objectives;evaluation,Design training based on needs analysis clear objectives and feedback.
+37,Explain payroll process.,Medium,salary calculation;tax deduction;compliance,Payroll includes salary processing tax deductions and legal compliance.
+38,How do you reduce employee turnover?,Medium,retention strategy;engagement;benefits,Reduce turnover by improving engagement compensation and growth opportunities.
+39,What is 360 degree feedback?,Medium,multi source feedback;performance review;development,360 degree feedback collects feedback from peers managers and subordinates.
+40,How do you manage remote workforce?,Medium,communication;performance tracking;engagement,Manage remote teams through digital tools communication and accountability.
+41,Explain employee lifecycle.,Medium,recruitment;development;exit,Employee lifecycle includes hiring development retention and exit.
+42,How do you handle underperforming employees?,Medium,coaching;PIP;monitoring,Address underperformance through coaching PIP and monitoring.
+43,Explain labor laws importance.,Medium,legal compliance;employee rights;risk management,Labor laws protect employee rights and reduce organizational risk.
+44,What is workforce analytics?,Medium,data driven decisions;HR metrics;performance,Workforce analytics uses data to improve HR decision making.
+45,How do you build employer branding strategy?,Medium,marketing;employee value proposition;social media,Employer branding promotes company culture and employee value proposition.
+46,How do you handle harassment complaints?,Medium,investigation;confidentiality;policy enforcement,Handle complaints with confidential investigation and policy enforcement.
+47,Explain succession planning strategy.,Medium,leadership development;talent pipeline;future roles,Succession planning prepares future leaders through development programs.
+48,What are HR KPIs?,Medium,turnover rate;time to hire;engagement score,HR KPIs measure recruitment retention and engagement performance.
+49,How do you design compensation strategy?,Medium,market benchmarking;performance pay;equity,Compensation strategy aligns pay with market standards and performance.
+50,Explain diversity and inclusion initiatives.,Medium,policy;training;equal opportunity,Diversity initiatives promote inclusive workplace and equal opportunities.
+51,How do you manage organizational change?,Medium,communication;change management;employee support,Manage change through communication leadership and employee support.
+52,What is grievance handling procedure?,Medium,complaint registration;investigation;resolution,Grievance handling includes registering investigating and resolving complaints.
+53,How do you improve workplace culture?,Medium,leadership;values;engagement,Improve culture through leadership example and engagement programs.
+54,Explain talent acquisition strategy.,Medium,sourcing;branding;selection process,Talent acquisition includes sourcing screening and selecting candidates strategically.
+55,How do you ensure employee well being?,Medium,work life balance;mental health;benefits,Promote well being through flexible policies and support programs.
+56,What is HR audit?,Medium,policy review;compliance check;process evaluation,HR audit reviews policies and processes for compliance and efficiency.
+57,How do you manage performance metrics?,Medium,data analysis;goal alignment;review,Manage metrics by tracking data and aligning goals with strategy.
+58,Explain employee engagement survey.,Medium,feedback collection;analysis;action plan,Surveys collect employee feedback to improve workplace environment.
+59,How do you handle mass hiring?,Medium,planning;screening;coordination,Mass hiring requires structured planning and efficient screening processes.
+60,Explain workforce diversity challenges.,Medium,bias;inclusion;training,Address diversity challenges through awareness and inclusive policies.
+61,Design an HR strategy aligned with business goals.,Hard,workforce planning;KPIs;alignment,HR strategy aligns talent management and KPIs with business objectives.
+62,How would you lead organizational restructuring?,Hard,change management;communication;role redesign,Restructuring requires planning communication and role optimization.
+63,How do you implement HR digital transformation?,Hard,automation;HRIS;data analytics,Digital transformation integrates HRIS automation and analytics tools.
+64,How would you manage mergers and acquisitions from HR perspective?,Hard,integration;culture alignment;policy harmonization,Manage M and A by aligning cultures and integrating HR policies.
+65,Explain strategic workforce planning.,Hard,forecasting;talent gap;future readiness,Strategic planning forecasts talent needs and addresses skill gaps.
+66,How do you measure ROI of HR initiatives?,Hard,metrics;cost benefit analysis;performance impact,Measure ROI using HR metrics and cost benefit analysis.
+67,Design leadership development program.,Hard,training;mentorship;succession,Leadership programs focus on mentorship skill development and succession planning.
+68,How do you handle large scale layoffs ethically?,Hard,legal compliance;communication;support,Ensure compliance transparent communication and employee support.
+69,Explain employee data privacy management.,Hard,data protection;compliance;confidentiality,Protect employee data through compliance and secure systems.
+70,How do you build high performance culture?,Hard,engagement;accountability;leadership,High performance culture requires accountability leadership and recognition.
+71,How would you manage global workforce?,Hard,cross cultural management;compliance;communication,Global workforce management requires cultural awareness and legal compliance.
+72,Explain HR risk management.,Hard,risk assessment;mitigation;policy planning,HR risk management identifies and mitigates workforce risks.
+73,How do you develop succession pipeline?,Hard,talent identification;development;retention,Develop pipeline through talent identification and mentoring.
+74,Design performance based incentive system.,Hard,bonus structure;KPIs;motivation,Incentives link performance metrics to rewards.
+75,How do you manage industrial relations?,Hard,union negotiation;compliance;conflict resolution,Manage relations through negotiation and compliance.
+76,Explain HR analytics in decision making.,Hard,predictive analytics;data insights;strategy,HR analytics supports strategic decisions using predictive insights.
+77,How would you handle ethical dilemma in HR?,Hard,integrity;policy;confidentiality,Handle dilemmas through policy adherence and ethical judgment.
+78,Design employee engagement framework.,Hard,feedback;recognition;culture building,Framework includes recognition feedback and cultural initiatives.
+79,How do you ensure legal compliance across regions?,Hard,multi region laws;audit;policy standardization,Ensure compliance by auditing and adapting policies regionally.
+80,Explain total rewards strategy.,Hard,compensation;benefits;recognition,Total rewards combine financial and non financial benefits.
+81,How do you reduce organizational conflict?,Hard,communication;training;leadership,Reduce conflict through leadership training and communication.
+82,How would you implement AI in HR processes?,Hard,automation;screening;analytics,AI improves recruitment screening and workforce analytics.
+83,Explain change resistance management.,Hard,communication;training;leadership support,Manage resistance through communication and support.
+84,How do you align HR with corporate governance?,Hard,policy compliance;ethics;reporting,Align HR policies with governance and reporting standards.
+85,Design employee wellness program.,Hard,mental health;benefits;engagement,Wellness programs focus on physical and mental well being.
+86,How do you manage cross functional collaboration?,Hard,communication;goal alignment;leadership,Encourage collaboration through aligned goals and leadership support.
+87,Explain HR strategic planning process.,Hard,analysis;goal setting;implementation,Strategic planning includes analysis goal setting and execution.
+88,How do you measure employee productivity?,Hard,metrics;KPIs;performance analysis,Productivity is measured using KPIs and performance data.
+89,How would you manage crisis in workplace?,Hard,risk management;communication;leadership,Manage crisis through planning communication and decisive leadership.
+90,Explain future trends in HR management.,Hard,digital transformation;analytics;remote work,Future HR trends include analytics automation and remote workforce management.

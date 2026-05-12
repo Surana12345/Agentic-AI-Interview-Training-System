@@ -1,0 +1,159 @@
+.container {
+    font-family: 'Inter', sans-serif;
+}
+
+.greeting {
+    font-size: 1.5rem;
+    color: #f8fafc;
+    margin-bottom: 24px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.summaryRow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .summaryRow {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .summaryRow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.summaryCard {
+    background-color: #0a0a0a;
+    padding: 18px 16px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #1f2937;
+}
+
+.summaryValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 2px;
+}
+
+.summaryLabel {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1024px) {
+    .mainGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #0a0a0a;
+    padding: 24px;
+    border-radius: 14px;
+    border: 1px solid #1f2937;
+}
+
+.cardTitle {
+    margin: 0 0 16px 0;
+    font-size: 1rem;
+    color: #f8fafc;
+    font-weight: 600;
+}
+
+.statLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterLabel {
+    display: block;
+    font-size: 0.72rem;
+    color: #94a3b8;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 4px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #1f2937;
+    background-color: #050505;
+    cursor: pointer;
+    font-size: 0.88rem;
+    outline: none;
+    color: #f8fafc;
+}
+
+.tooltip {
+    background-color: #0a0a0a;
+    padding: 10px 14px;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.th {
+    padding: 10px 12px;
+    font-size: 0.72rem;
+    color: #94a3b8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.td {
+    padding: 12px;
+    font-size: 0.88rem;
+    color: #cbd5e1;
+}
+
+.modeBadge {
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.sessionComparisonGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+    .sessionComparisonGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

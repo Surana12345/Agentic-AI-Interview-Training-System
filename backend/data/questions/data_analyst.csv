@@ -1,0 +1,91 @@
+question_id,question_text,difficulty,expected_keywords,ideal_answer_summary
+1,What is data analysis?,Easy,inspection;cleaning;transformation;insights,Data analysis is the process of inspecting cleaning and transforming data to extract useful insights for decision making.
+2,Who is a data analyst?,Easy,data interpretation;reporting;visualization;business support,A data analyst collects and interprets data to help businesses make informed decisions.
+3,What are common tools used by data analysts?,Easy,Excel;SQL;Python;Tableau;Power BI,Common tools include Excel for analysis SQL for querying databases Python for advanced analysis and Tableau or Power BI for visualization.
+4,What is SQL?,Easy,structured query language;database;queries,SQL is a language used to store retrieve and manage data in relational databases.
+5,What is a database?,Easy,data storage;tables;rows;columns,A database is an organized collection of data stored in tables with rows and columns.
+6,What is a spreadsheet?,Easy,Excel;rows;columns;calculation,A spreadsheet is a tool like Excel used to organize calculate and analyze data in tabular format.
+7,What is data visualization?,Easy,charts;graphs;dashboards;communication,Data visualization is representing data using charts and graphs to communicate insights clearly.
+8,What is a bar chart?,Easy,comparison;categories;visualization,A bar chart is used to compare values across different categories using rectangular bars.
+9,What is a pie chart?,Easy,percentage;proportion;distribution,A pie chart shows proportions of a whole as percentage slices.
+10,What is mean?,Easy,average;central tendency,Mean is the average value calculated by dividing total sum by number of observations.
+11,What is median?,Easy,middle value;ordered data,Median is the middle value when data is arranged in order.
+12,What is mode?,Easy,most frequent;occurrence,Mode is the value that appears most frequently in a dataset.
+13,What is variance?,Easy,spread;deviation;dispersion,Variance measures how far data points are spread from the mean.
+14,What is standard deviation?,Easy,dispersion;spread;mean,Standard deviation measures the average distance of data points from the mean.
+15,What is a KPI?,Easy,key performance indicator;metrics;business goals,KPI is a measurable metric used to evaluate success in achieving business objectives.
+16,What is data cleaning?,Easy,missing values;duplicates;errors;quality,Data cleaning is the process of correcting errors handling missing values and removing duplicates.
+17,What is structured data?,Easy,tabular;rows;columns;database,Structured data is organized in tables with predefined schema like rows and columns.
+18,What is unstructured data?,Easy,text;images;videos;no fixed format,Unstructured data includes data like text images and videos without a fixed schema.
+19,What is a dashboard?,Easy,visual interface;KPIs;interactive,A dashboard is a visual interface displaying important metrics and insights.
+20,What is filtering in data analysis?,Easy,select;criteria;subset,Filtering is selecting specific data based on given conditions or criteria.
+21,What is sorting in data analysis?,Easy,ascending;descending;order,Sorting arranges data in ascending or descending order.
+22,What is a primary key?,Easy,unique identifier;database,A primary key uniquely identifies each record in a table.
+23,What is a foreign key?,Easy,relationship;referential integrity;database,A foreign key links one table to another by referencing a primary key.
+24,What is aggregation?,Easy,sum;average;count;grouping,Aggregation summarizes data using functions like SUM COUNT and AVERAGE.
+25,What is COUNT function in SQL?,Easy,aggregation;row count;non-null,COUNT function returns the number of rows or non-null values in a column.
+26,What is data sampling?,Easy,subset;population;analysis,Data sampling is selecting a small portion of data to represent the entire dataset.
+27,What is correlation?,Easy,relationship;positive;negative,Correlation measures the relationship between two variables.
+28,What is regression?,Easy,prediction;relationship;dependent variable,Regression is a method used to predict a dependent variable based on independent variables.
+29,What is ETL?,Easy,extract;transform;load;data warehouse,ETL stands for Extract Transform and Load process used to move data into a data warehouse.
+30,Why is data important for business?,Easy,decision making;insights;strategy;performance,Data helps businesses make informed decisions improve strategies and enhance performance.
+31,Explain the difference between UNION and UNION ALL in SQL.,Medium,SQL;duplicates;set operations;performance,UNION removes duplicate records while UNION ALL includes all records including duplicates and performs faster.
+32,How does indexing improve query performance?,Medium,index;B-tree;search speed;query optimization,Indexing creates a data structure that allows faster retrieval of records by reducing the amount of data scanned.
+33,What is a window function in SQL?,Medium,OVER;partition by;row number;ranking,Window functions perform calculations across a set of rows related to the current row without collapsing the result set.
+34,Explain the concept of data normalization vs denormalization.,Medium,redundancy;performance;joins;data integrity,Normalization reduces redundancy and improves integrity while denormalization increases redundancy to improve query performance.
+35,What is the difference between supervised and unsupervised learning?,Medium,labels;classification;clustering;regression,Supervised learning uses labeled data for prediction while unsupervised learning finds hidden patterns in unlabeled data.
+36,How do you detect multicollinearity?,Medium,VIF;correlation matrix;regression assumptions,Multicollinearity is detected using correlation matrix or Variance Inflation Factor which measures correlation between independent variables.
+37,What is the Central Limit Theorem?,Medium,sampling distribution;normal distribution;large sample size,It states that the sampling distribution of the mean approaches a normal distribution as sample size increases regardless of original distribution.
+38,Explain the difference between covariance and correlation.,Medium,relationship;scale;standardized;coefficient,Covariance shows direction of relationship while correlation standardizes it between minus one and one to measure strength and direction.
+39,What is feature engineering?,Medium,data transformation;feature creation;model performance,Feature engineering involves creating or transforming variables to improve model performance.
+40,How do you handle skewed data?,Medium,log transformation;normalization;outliers;scaling,Skewed data can be handled using log transformation Box Cox transformation or scaling techniques.
+41,What is a confusion matrix?,Medium,true positive;false positive;accuracy;precision;recall,A confusion matrix evaluates classification models by comparing predicted and actual values.
+42,Explain precision and recall.,Medium,false positives;false negatives;classification metrics,Precision measures correctness of positive predictions while recall measures ability to identify actual positives.
+43,What is cross-validation?,Medium,model validation;k-fold;overfitting,Cross validation splits data into multiple folds to validate model performance and reduce overfitting.
+44,What is the difference between DELETE TRUNCATE and DROP?,Medium,SQL;data removal;table structure,DELETE removes specific rows TRUNCATE removes all rows quickly and DROP deletes the entire table structure.
+45,What are CTEs in SQL?,Medium,common table expression;WITH clause;temporary result,CTEs are temporary result sets defined using WITH clause to simplify complex queries.
+46,How do you identify trends in time-series data?,Medium,trend analysis;moving average;seasonality;decomposition,Trends can be identified using moving averages decomposition methods and visualization of time series patterns.
+47,What is heteroscedasticity?,Medium,regression;variance;assumptions;residuals,Heteroscedasticity occurs when variance of residuals is not constant across independent variables.
+48,Explain the concept of p-value.,Medium,hypothesis testing;statistical significance;null hypothesis,A p value indicates the probability of observing results assuming the null hypothesis is true.
+49,What is data wrangling?,Medium,cleaning;transformation;reshaping;preprocessing,Data wrangling involves cleaning transforming and structuring raw data into usable format for analysis.
+50,How do you optimize a slow SQL query?,Medium,indexing;query plan;joins;filtering;optimization,Query optimization involves indexing reducing joins analyzing execution plans and filtering data efficiently.
+51,What is dimensionality reduction?,Medium,PCA;feature selection;curse of dimensionality,Dimensionality reduction reduces the number of features using techniques like PCA to improve model efficiency.
+52,Explain clustering techniques.,Medium,K-means;hierarchical;unsupervised;segmentation,Clustering groups similar data points using methods like K-means or hierarchical clustering.
+53,What is a data mart?,Medium,subset;data warehouse;departmental analysis,A data mart is a subject oriented subset of a data warehouse designed for specific departments.
+54,Explain the difference between fact table and dimension table.,Medium,data warehouse;measures;attributes;star schema,Fact tables store quantitative measures while dimension tables store descriptive attributes in a star schema.
+55,What is sampling bias?,Medium,bias;representation;population;accuracy,Sampling bias occurs when the sample is not representative of the population leading to inaccurate conclusions.
+56,How do you evaluate a regression model?,Medium,R-squared;RMSE;MAE;residual analysis,Regression models are evaluated using R squared RMSE MAE and residual diagnostics.
+57,What is data lineage?,Medium,data flow;source tracking;transformation;governance,Data lineage tracks the origin movement and transformation of data across systems.
+58,Explain the concept of business intelligence.,Medium,reporting;dashboards;data-driven decisions;analytics,Business intelligence involves analyzing data using reports and dashboards to support strategic decisions.
+59,What is anomaly detection?,Medium,outliers;pattern recognition;fraud detection,Anomaly detection identifies unusual patterns or outliers that deviate from expected behavior.
+60,How do you communicate complex data insights to non-technical stakeholders?,Medium,data storytelling;visualization;clear language;business impact,Effective communication involves clear visualizations simple language and linking insights to business impact.
+61,Design a data model for an e-commerce platform.,Hard,fact table;dimension table;star schema;transactions;users,A strong answer explains designing fact tables for transactions and dimension tables for users products and time using a star schema.
+62,How would you detect and prevent data leakage in a machine learning model?,Hard,data leakage;train-test split;feature engineering;cross-validation,Prevent data leakage by proper train test split avoiding future data in training and validating using cross validation.
+63,Explain how you would design an A B test for a new product feature.,Hard,hypothesis;sample size;control group;statistical power;significance,Define hypothesis calculate sample size randomly assign users measure metrics and analyze statistical significance.
+64,How would you forecast sales for the next quarter?,Hard,time series;ARIMA;seasonality;trend;external factors,Use historical data identify trend and seasonality apply time series models like ARIMA and validate forecast accuracy.
+65,How do you handle highly imbalanced datasets?,Hard,SMOTE;resampling;class weights;precision-recall,Handle imbalance using oversampling undersampling SMOTE or adjusting class weights and evaluating using precision recall.
+66,Explain how to build a real-time analytics pipeline.,Hard,stream processing;ETL;Kafka;Spark;data warehouse,Design includes data ingestion via streaming tools real time processing transformation and storage for analytics dashboards.
+67,How would you identify causal relationships rather than correlations?,Hard,causality;controlled experiment;confounding variables;randomization,Causal inference requires controlled experiments eliminating confounders and using randomized designs.
+68,How do you evaluate model bias and fairness?,Hard,bias detection;fairness metrics;demographic parity;ethical AI,Assess fairness using metrics like demographic parity and analyze model performance across different groups.
+69,Design a KPI framework for a SaaS company.,Hard,ARR;churn rate;LTV;CAC;retention,Identify revenue metrics like ARR churn customer acquisition cost lifetime value and retention for business growth analysis.
+70,How would you optimize a large-scale ETL workflow?,Hard,parallel processing;partitioning;performance tuning;automation,Optimize by parallelizing jobs partitioning data indexing and automating workflows.
+71,Explain how recommendation systems work.,Hard,collaborative filtering;content-based;matrix factorization,Recommendation systems use collaborative filtering content based filtering or hybrid approaches to suggest items.
+72,How do you detect fraudulent transactions?,Hard,anomaly detection;classification;behavioral patterns;thresholds,Use anomaly detection supervised classification and behavioral pattern analysis to flag suspicious transactions.
+73,What is overfitting and how do you prevent it?,Hard,regularization;cross-validation;pruning;dropout,Overfitting occurs when a model memorizes training data prevent it using regularization cross validation or pruning.
+74,Explain advanced SQL query optimization techniques.,Hard,index tuning;execution plan;partitioning;materialized views,Optimization includes analyzing execution plans indexing partitioning large tables and using materialized views.
+75,How would you measure customer lifetime value?,Hard,LTV;revenue prediction;retention rate;discount rate,Calculate LTV using average revenue retention rate and predictive modeling for future customer value.
+76,Design a churn prediction model.,Hard,classification;feature selection;logistic regression;ROC-AUC,Define churn label engineer behavioral features train a classification model and evaluate using ROC AUC.
+77,Explain dimensional modeling in detail.,Hard,star schema;snowflake schema;fact;dimension,Dimensional modeling structures data into fact and dimension tables using star or snowflake schema for analytics.
+78,How would you handle big data processing challenges?,Hard,distributed systems;Hadoop;Spark;scalability,Use distributed frameworks like Hadoop or Spark for scalable processing and fault tolerance.
+79,Explain bootstrapping in statistics.,Hard,resampling;confidence interval;sampling distribution,Bootstrapping estimates sampling distribution by repeatedly resampling with replacement.
+80,How would you design a dashboard for executives?,Hard,KPIs;visual hierarchy;interactive;business goals,Focus on high level KPIs clear visuals interactive filters and alignment with strategic goals.
+81,How do you validate data accuracy in large datasets?,Hard,data validation;consistency checks;automated testing;auditing,Implement validation rules consistency checks reconciliation and automated quality tests.
+82,Explain gradient descent in simple terms.,Hard,optimization;loss function;learning rate;iterations,Gradient descent minimizes a loss function by iteratively updating parameters using a learning rate.
+83,How would you approach root cause analysis for sudden revenue drop?,Hard,data exploration;segmentation;trend analysis;hypothesis testing,Segment data by region product and time analyze trends test hypotheses and identify underlying causes.
+84,How do you manage data security and privacy in analytics?,Hard,encryption;access control;GDPR;data masking,Ensure encryption role based access control compliance with regulations and anonymization.
+85,Explain ROC curve and AUC.,Hard,classification;true positive rate;false positive rate;model evaluation,ROC curve plots true positive rate versus false positive rate and AUC measures the models ability to distinguish classes.
+86,How would you migrate legacy data to a new system?,Hard,data mapping;ETL;validation;testing,Plan data mapping perform ETL validate migrated data and conduct rigorous testing.
+87,What is Monte Carlo simulation?,Hard,probability simulation;risk analysis;random sampling,Monte Carlo simulation uses repeated random sampling to simulate and analyze uncertain outcomes.
+88,How do you choose between different machine learning models?,Hard,model comparison;cross-validation;bias-variance;performance metrics,Compare models using cross validation evaluate bias variance tradeoff and choose based on performance metrics.
+89,How would you build a predictive maintenance model?,Hard,time-series;sensor data;classification;failure prediction,Use sensor data engineer time based features and train a classification model to predict equipment failures.
+90,Explain data observability and monitoring.,Hard,data quality monitoring;alerts;pipeline health;metrics,Data observability tracks data health using monitoring metrics alerts and pipeline performance tracking.

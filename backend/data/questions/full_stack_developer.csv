@@ -1,0 +1,91 @@
+question_id,question_text,difficulty,expected_keywords,ideal_answer_summary
+1,What is full stack development?,Easy,frontend;backend;database;api,Full stack development involves working on both frontend and backend including databases and APIs.
+2,What is HTML?,Easy,markup;structure;web pages,HTML is a markup language used to structure content on web pages.
+3,What is CSS?,Easy,styling;layout;design,CSS is used to style and design web pages including layout colors and fonts.
+4,What is JavaScript?,Easy,scripting;dynamic;browser,JavaScript is a scripting language used to create dynamic and interactive web applications.
+5,What is the difference between frontend and backend?,Easy,client side;server side;ui;logic,Frontend handles user interface while backend manages server logic and database operations.
+6,What is a REST API?,Easy,http;endpoints;json;stateless,A REST API allows communication between client and server using HTTP methods and JSON data.
+7,What is Node.js?,Easy,server side;javascript runtime;backend,Node.js is a JavaScript runtime used to build server side applications.
+8,What is Express.js?,Easy,framework;node;middleware,Express.js is a lightweight framework for building web applications using Node.js.
+9,What is a database?,Easy,data storage;tables;records,A database is a system used to store manage and retrieve structured data.
+10,What is SQL?,Easy,structured query language;database;queries,SQL is a language used to interact with relational databases.
+11,What is NoSQL?,Easy,non relational;document;flexible schema,NoSQL databases store unstructured or semi structured data with flexible schemas.
+12,What is Git?,Easy,version control;repository;commit,Git is a version control system used to track code changes.
+13,What is GitHub?,Easy,repository hosting;collaboration;git,GitHub is a platform for hosting and collaborating on Git repositories.
+14,What is responsive design?,Easy,media queries;mobile friendly;layout,Responsive design ensures websites work properly on different screen sizes.
+15,What is JSON?,Easy,data format;key value;api,JSON is a lightweight data format used for data exchange between client and server.
+16,What is HTTP?,Easy,protocol;client server;request response,HTTP is a protocol used for communication between client and server.
+17,What are HTTP methods?,Easy,GET;POST;PUT;DELETE,HTTP methods define actions like retrieving creating updating and deleting resources.
+18,What is DOM?,Easy,document object model;html;tree structure,DOM represents the structure of HTML documents as a tree.
+19,What is an event listener in JavaScript?,Easy,user interaction;click;handler,An event listener waits for user actions and triggers a function.
+20,What is a function?,Easy,reusable code;parameters;return,A function is a reusable block of code that performs a specific task.
+21,What is middleware?,Easy,request processing;express;next,Middleware is a function that processes requests before reaching the final handler.
+22,What is authentication?,Easy,login;identity;security,Authentication verifies the identity of a user.
+23,What is authorization?,Easy,permissions;access control;roles,Authorization determines what resources a user can access.
+24,What is MVC architecture?,Easy,model;view;controller;separation,MVC separates application into model view and controller components.
+25,What is npm?,Easy,package manager;node modules;dependencies,npm is a package manager used to install and manage Node.js libraries.
+26,What is a component in frontend frameworks?,Easy,reusable ui;modular;state,A component is a reusable piece of UI with its own logic and state.
+27,What is local storage in browser?,Easy,client storage;key value;persistent,Local storage stores data in the browser persistently as key value pairs.
+28,What is session storage?,Easy,temporary storage;browser;session,Session storage stores data temporarily during a browser session.
+29,What is debugging?,Easy,error fixing;developer tools;testing,Debugging is the process of identifying and fixing errors in code.
+30,What is deployment?,Easy,hosting;production;server,Deployment is the process of making an application live on a server.
+31,Explain event loop in JavaScript.,Medium,call stack;callback queue;asynchronous;non blocking,Event loop manages asynchronous operations by handling callbacks after the call stack is clear.
+32,What is promises in JavaScript?,Medium,asynchronous;then;catch,Promises handle asynchronous operations and represent future completion or failure.
+33,What is async and await?,Medium,asynchronous;promise;clean syntax,Async await simplifies working with promises using synchronous like syntax.
+34,Explain CORS.,Medium,cross origin;browser security;headers,CORS controls resource sharing between different origins using HTTP headers.
+35,What is JWT?,Medium,token;authentication;stateless,JWT is a token based authentication method used for secure stateless sessions.
+36,Explain RESTful principles.,Medium,stateless;resource based;http methods,RESTful services follow stateless communication and resource based endpoints.
+37,What is ORM?,Medium,object relational mapping;database abstraction;models,ORM maps database tables to objects in programming languages.
+38,Explain indexing in database.,Medium,performance;search;query optimization,Indexing improves database query performance by reducing scan time.
+39,What is hashing?,Medium,password security;encryption;one way,Hashing converts data into fixed length values for secure storage.
+40,What is WebSocket?,Medium,real time;bidirectional;connection,WebSocket enables real time two way communication between client and server.
+41,Explain difference between SQL and NoSQL.,Medium,relational;non relational;schema;scalability,SQL uses structured relational tables while NoSQL uses flexible non relational storage.
+42,What is microservices architecture?,Medium,independent services;scalable;api based,Microservices divide application into independent deployable services.
+43,What is containerization?,Medium,docker;environment isolation;deployment,Containerization packages applications with dependencies for consistent deployment.
+44,Explain state management.,Medium,frontend;react;global state,State management handles application data flow across components.
+45,What is server side rendering?,Medium,seo;performance;initial load,Server side rendering generates HTML on server before sending to client.
+46,Explain caching.,Medium,performance;redis;memory,Caching stores frequently accessed data to improve performance.
+47,What is load balancing?,Medium,traffic distribution;scalability;availability,Load balancing distributes traffic across servers.
+48,What is rate limiting?,Medium,api protection;request control;security,Rate limiting restricts number of API requests to prevent abuse.
+49,Explain CI CD.,Medium,continuous integration;deployment;automation,CI CD automates testing and deployment pipelines.
+50,What is API versioning?,Medium,backward compatibility;v1;v2,API versioning manages changes without breaking existing clients.
+51,Explain SQL joins.,Medium,inner join;left join;right join;combine tables,Joins combine data from multiple tables based on relationships.
+52,What is environment variables?,Medium,configuration;security;production,Environment variables store configuration values outside source code.
+53,What is reverse proxy?,Medium,nginx;request forwarding;security,A reverse proxy forwards client requests to backend servers.
+54,Explain difference between PUT and PATCH.,Medium,http methods;update;partial update,PUT replaces entire resource while PATCH updates partially.
+55,What is GraphQL?,Medium,query language;api;flexible data,GraphQL allows clients to request specific data from APIs.
+56,Explain dependency injection.,Medium,loose coupling;testability;inversion of control,Dependency injection provides dependencies externally to improve modularity.
+57,What is testing pyramid?,Medium,unit test;integration test;e2e test,Testing pyramid emphasizes more unit tests fewer integration and end to end tests.
+58,What is OAuth?,Medium,authorization;token;third party login,OAuth allows secure delegated access using tokens.
+59,Explain CSRF.,Medium,security;forgery;tokens,CSRF is an attack where unauthorized commands are transmitted from trusted users.
+60,What is XSS?,Medium,security;script injection;sanitization,XSS is a vulnerability where malicious scripts are injected into web pages.
+61,Design a scalable full stack application.,Hard,architecture;microservices;database scaling;caching,A scalable application uses microservices load balancing caching and optimized databases.
+62,How would you secure a full stack application?,Hard,authentication;authorization;encryption;validation,Security involves JWT authentication HTTPS encryption input validation and access control.
+63,Explain database sharding.,Hard,horizontal scaling;partitioning;performance,Sharding splits database into smaller pieces to improve scalability.
+64,How would you handle millions of users?,Hard,scaling;load balancing;caching;cloud,Handle high traffic using cloud scaling load balancing and caching strategies.
+65,Explain eventual consistency.,Hard,distributed systems;consistency model;replication,Eventual consistency ensures data becomes consistent across systems over time.
+66,Design a real time chat application.,Hard,websocket;scalability;database;authentication,Use WebSocket for communication scalable backend and persistent storage.
+67,Explain CAP theorem.,Hard,consistency;availability;partition tolerance,CAP theorem states distributed systems can only guarantee two of three properties.
+68,How do you optimize frontend performance?,Hard,code splitting;lazy loading;caching;cdn,Optimize using code splitting lazy loading CDN and performance monitoring.
+69,How do you prevent memory leaks in JavaScript?,Hard,garbage collection;event cleanup;closures,Prevent memory leaks by removing unused references and cleaning event listeners.
+70,Explain database replication.,Hard,backup;high availability;read scaling,Replication copies data across servers for high availability and scaling.
+71,How would you design an API gateway?,Hard,routing;authentication;rate limiting;monitoring,API gateway manages routing authentication rate limiting and logging.
+72,Explain blue green deployment.,Hard,zero downtime;release strategy;rollback,Blue green deployment ensures zero downtime by switching environments.
+73,How would you monitor production systems?,Hard,logging;metrics;alerts;observability,Monitoring includes logging metrics collection alerts and health checks.
+74,Explain message queues.,Hard,asynchronous processing;queue;decoupling,Message queues enable asynchronous communication between services.
+75,How do you handle distributed transactions?,Hard,two phase commit;saga pattern;consistency,Distributed transactions use two phase commit or saga pattern for consistency.
+76,Design multi tenant architecture.,Hard,data isolation;scalability;security,Multi tenant systems isolate data while sharing infrastructure.
+77,Explain serverless architecture.,Hard,cloud functions;scaling;event driven,Serverless runs code in response to events without managing servers.
+78,How would you migrate monolith to microservices?,Hard,refactoring;service extraction;api communication,Migration involves breaking monolith into independent services gradually.
+79,Explain performance bottleneck identification.,Hard,profiling;monitoring;optimization,Identify bottlenecks using profiling tools monitoring metrics and performance analysis.
+80,How do you implement role based access control?,Hard,roles;permissions;authorization,Implement RBAC by assigning permissions to roles and roles to users.
+81,Explain distributed caching.,Hard,redis;memcached;scaling,Distributed caching shares cached data across multiple servers.
+82,How do you secure APIs from attacks?,Hard,rate limiting;input validation;authentication,Secure APIs using validation authentication rate limiting and HTTPS.
+83,Design file upload system at scale.,Hard,storage;cdn;security;chunk upload,Use cloud storage CDN chunk uploads and validation for scalable file handling.
+84,Explain data consistency strategies.,Hard,strong consistency;eventual consistency;transactions,Consistency strategies depend on application needs and trade offs.
+85,How would you design notification system?,Hard,queue;real time;scalability,Use message queues push services and scalable architecture.
+86,Explain indexing strategy for large databases.,Hard,composite index;query optimization;performance,Choose indexes based on query patterns and optimize execution plans.
+87,How do you ensure high availability?,Hard,replication;failover;monitoring,High availability requires replication automatic failover and monitoring.
+88,Explain edge computing.,Hard,cdn;low latency;distributed processing,Edge computing processes data closer to users to reduce latency.
+89,How would you design payment integration?,Hard,security;third party api;tokenization,Use secure third party APIs tokenization and compliance standards.
+90,Explain observability in distributed systems.,Hard,logs;metrics;tracing;monitoring,Observability combines logs metrics and tracing to monitor distributed systems.

@@ -1,0 +1,91 @@
+question_id,question_text,difficulty,expected_keywords,ideal_answer_summary
+1,What is software engineering?,Easy,development;design;testing;maintenance,Software engineering is the systematic process of designing developing testing and maintaining software systems.
+2,What is a programming language?,Easy,syntax;logic;instructions;compiler,A programming language is used to write instructions that computers can execute.
+3,What is object oriented programming?,Easy,encapsulation;inheritance;polymorphism;abstraction,Object oriented programming organizes code using objects and core principles.
+4,What is a variable?,Easy,data storage;memory;value,A variable stores data values in memory.
+5,What is a function?,Easy,reusable code;parameters;return,A function is a reusable block of code that performs a task.
+6,What is debugging?,Easy,error fixing;testing;tools,Debugging is identifying and fixing errors in code.
+7,What is version control?,Easy,git;repository;code tracking,Version control tracks changes in source code over time.
+8,What is Git?,Easy,distributed version control;repository;commit,Git is a distributed version control system.
+9,What is an algorithm?,Easy,step by step process;logic;problem solving,An algorithm is a step by step procedure to solve a problem.
+10,What is a data structure?,Easy,array;list;tree;organization,A data structure organizes and stores data efficiently.
+11,What is a loop?,Easy,iteration;repetition;control flow,A loop repeats a block of code until condition is met.
+12,What is conditional statement?,Easy,if else;decision making;logic,Conditional statements execute code based on conditions.
+13,What is API?,Easy,application programming interface;communication;integration,API enables communication between software systems.
+14,What is a database?,Easy,data storage;tables;records,A database stores and manages data.
+15,What is SQL?,Easy,structured query language;database queries;data management,SQL is used to interact with relational databases.
+16,What is HTTP?,Easy,protocol;client server;web communication,HTTP is protocol for communication between client and server.
+17,What is frontend development?,Easy,user interface;html;css;javascript,Frontend development focuses on user interface.
+18,What is backend development?,Easy,server;database;logic,Backend handles server side logic and database interactions.
+19,What is compilation?,Easy,source code;machine code;compiler,Compilation converts source code into machine code.
+20,What is interpreter?,Easy,line by line execution;runtime,Interpreter executes code line by line.
+21,What is testing?,Easy,unit testing;bug detection;quality assurance,Testing ensures software works as expected.
+22,What is unit test?,Easy,small component testing;automation,Unit test checks individual components.
+23,What is framework?,Easy,structure;library;reusable components,A framework provides predefined structure and tools.
+24,What is library?,Easy,reusable code;functions;modules,A library is collection of reusable code.
+25,What is cloud computing?,Easy,remote servers;scalability;internet,Cloud computing provides computing services over internet.
+26,What is deployment?,Easy,production;hosting;release,Deployment is releasing application to production.
+27,What is code review?,Easy,quality check;collaboration;improvement,Code review improves quality through peer feedback.
+28,What is refactoring?,Easy,code improvement;optimization;maintainability,Refactoring improves code without changing behavior.
+29,What is exception handling?,Easy,error management;try catch;robustness,Exception handling manages runtime errors gracefully.
+30,What is open source?,Easy,public code;collaboration;community,Open source software allows public access to source code.
+31,Explain OOP principles.,Medium,encapsulation;inheritance;polymorphism;abstraction,OOP principles include encapsulation inheritance polymorphism and abstraction.
+32,What is time complexity?,Medium,big O;algorithm efficiency;performance,Time complexity measures algorithm performance using Big O notation.
+33,What is space complexity?,Medium,memory usage;optimization;efficiency,Space complexity measures memory usage of algorithm.
+34,Explain recursion.,Medium,function calls;stack;base case,Recursion is function calling itself with base condition.
+35,What is multithreading?,Medium,concurrency;parallel execution;threads,Multithreading allows concurrent execution of tasks.
+36,Explain REST architecture.,Medium,stateless;http methods;resource based,REST is stateless architecture using HTTP methods.
+37,What is database indexing?,Medium,query optimization;search performance,Indexing improves database query speed.
+38,What is deadlock?,Medium,resource locking;concurrency issue,Deadlock occurs when processes wait indefinitely for resources.
+39,Explain design patterns.,Medium,reusable solutions;software design;best practices,Design patterns provide reusable solutions to common problems.
+40,What is SOLID principle?,Medium,design principle;maintainability;object oriented,SOLID principles improve maintainability of OOP systems.
+41,What is microservices architecture?,Medium,distributed systems;independent services;scalability,Microservices divide application into independent services.
+42,What is CI CD?,Medium,continuous integration;continuous deployment;automation,CI CD automates testing and deployment pipelines.
+43,Explain caching mechanism.,Medium,performance;memory storage;redis,Caching stores frequently used data to improve speed.
+44,What is load balancing?,Medium,traffic distribution;high availability;scalability,Load balancing distributes traffic across servers.
+45,Explain containerization.,Medium,docker;isolation;deployment,Containerization packages applications with dependencies.
+46,What is ORM?,Medium,object relational mapping;database abstraction,ORM maps database tables to objects.
+47,Explain event driven architecture.,Medium,events;asynchronous;scalability,Event driven architecture reacts to events asynchronously.
+48,What is API rate limiting?,Medium,security;request control;protection,Rate limiting restricts excessive API requests.
+49,Explain memory management.,Medium,heap;stack;garbage collection,Memory management allocates and frees memory efficiently.
+50,What is scalability?,Medium,horizontal scaling;vertical scaling;performance,Scalability is ability to handle increased load.
+51,Explain TCP vs UDP.,Medium,protocol;reliability;connection oriented,TCP is reliable connection oriented while UDP is faster connectionless.
+52,What is authentication vs authorization?,Medium,identity verification;access control,Authentication verifies identity authorization grants access.
+53,Explain message queue.,Medium,asynchronous communication;decoupling;queue,Message queues enable asynchronous communication.
+54,What is graph database?,Medium,nodes;edges;relationships,Graph database stores data as nodes and relationships.
+55,Explain MVC architecture.,Medium,model;view;controller;separation,MVC separates logic presentation and data.
+56,What is dependency injection?,Medium,loose coupling;testability;inversion of control,Dependency injection improves modularity.
+57,Explain garbage collection.,Medium,automatic memory management;cleanup,Garbage collection frees unused memory automatically.
+58,What is encryption?,Medium,data security;hashing;privacy,Encryption secures data using algorithms.
+59,Explain distributed systems.,Medium,scalability;fault tolerance;network,Distributed systems consist of multiple connected systems.
+60,What is WebSocket?,Medium,real time;bidirectional communication,WebSocket enables real time communication.
+61,Design scalable web application.,Hard,architecture;load balancing;caching;database scaling,Design includes scalable infrastructure caching and optimized databases.
+62,Explain CAP theorem.,Hard,consistency;availability;partition tolerance,CAP theorem states distributed systems can guarantee only two properties.
+63,How do you optimize database performance?,Hard,indexing;query tuning;partitioning,Optimize performance using indexes and query analysis.
+64,Design distributed caching system.,Hard,redis;scalability;consistency,Distributed caching improves performance across servers.
+65,How would you handle high traffic system?,Hard,load balancing;auto scaling;caching,Handle traffic using scaling and caching strategies.
+66,Explain eventual consistency.,Hard,replication;distributed systems;data consistency,Eventual consistency ensures data sync over time.
+67,Design real time chat system.,Hard,websocket;database;scalability,Use WebSocket and scalable backend.
+68,Explain database sharding.,Hard,horizontal partitioning;scaling;performance,Sharding splits database to scale horizontally.
+69,How do you ensure application security?,Hard,authentication;authorization;encryption;validation,Ensure security with encryption and access control.
+70,Explain system design process.,Hard,requirements;architecture;scalability,System design includes requirement analysis and scalable architecture.
+71,How do you prevent memory leaks?,Hard,garbage collection;resource cleanup;profiling,Prevent leaks by releasing resources and profiling.
+72,Explain blue green deployment.,Hard,zero downtime;deployment strategy,Blue green ensures zero downtime releases.
+73,How do you design fault tolerant system?,Hard,redundancy;replication;monitoring,Fault tolerance uses redundancy and monitoring.
+74,Explain microservices communication.,Hard,REST;message queue;service discovery,Services communicate via APIs or queues.
+75,How do you secure APIs?,Hard,authentication;rate limiting;validation,Secure APIs with tokens and validation.
+76,Design payment processing system.,Hard,security;transaction management;compliance,Design ensures secure and reliable transactions.
+77,Explain data consistency models.,Hard,strong consistency;eventual consistency;trade offs,Consistency models define data guarantees.
+78,How do you handle distributed transactions?,Hard,two phase commit;saga pattern,Distributed transactions use coordination protocols.
+79,Explain observability in systems.,Hard,logging;monitoring;tracing,Observability uses logs metrics and tracing.
+80,Design file storage system.,Hard,cloud storage;scalability;cdn,Use scalable cloud storage and CDN.
+81,How do you optimize frontend performance?,Hard,code splitting;lazy loading;caching,Optimize using efficient loading strategies.
+82,Explain serverless architecture.,Hard,cloud functions;event driven;scalability,Serverless runs code without managing servers.
+83,How do you manage technical debt?,Hard,refactoring;prioritization;long term planning,Manage debt through strategic refactoring.
+84,Design recommendation system.,Hard,collaborative filtering;data processing;scalability,Recommendation system suggests items using user data.
+85,Explain data pipeline architecture.,Hard,ETL;stream processing;scalability,Data pipelines process and transform large datasets.
+86,How do you monitor production systems?,Hard,logging;alerts;metrics,Monitor systems using metrics and alerts.
+87,Explain Kubernetes orchestration.,Hard,container management;scaling;deployment,Kubernetes manages containerized applications.
+88,How do you migrate monolith to microservices?,Hard,refactoring;service extraction;deployment,Migration involves gradual extraction of services.
+89,Explain zero trust security model.,Hard,authentication;least privilege;verification,Zero trust requires verification for every access.
+90,Explain future trends in software engineering.,Hard,AI integration;automation;cloud native,Future trends include AI automation and cloud native development.

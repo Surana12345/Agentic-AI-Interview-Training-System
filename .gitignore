@@ -1,0 +1,53 @@
+# ──── Python ────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+*.whl
+.pytest_cache/
+
+# ──── Virtual Environments ────
+venv/
+.venv/
+env/
+
+# ──── Environment Variables (SECURITY) ────
+.env
+.env.local
+.env.production
+
+# ──── Node.js ────
+node_modules/
+dist/
+build/
+.vite/
+
+# ──── IDE / Editor ────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ──── OS ────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ──── Databases ────
+*.db
+*.sqlite3
+
+# ──── Logs ────
+*.log
+logs/
+
+# ──── User Data (generated at runtime) ────
+backend/data/users.json
+backend/data/user_*_stats.json
+backend/data/database.db
+
+# ──── Temp Files ────
+temp_audio_*
+*.webm

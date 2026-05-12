@@ -1,0 +1,91 @@
+question_id,question_text,difficulty,expected_keywords,ideal_answer_summary
+1,What is marketing?,Easy,customer needs;value;promotion;exchange,Marketing is the process of identifying customer needs and creating value through promotion and exchange.
+2,What is digital marketing?,Easy,online channels;seo;social media;ads,Digital marketing promotes products using online channels such as search engines and social media.
+3,What is branding?,Easy,brand identity;perception;positioning,Branding creates a unique identity and perception in customers minds.
+4,What is market research?,Easy,data collection;analysis;customer insights,Market research gathers and analyzes data about customers and competitors.
+5,What is target audience?,Easy,segmentation;demographics;customer group,Target audience is the specific group of customers a business aims to reach.
+6,What is SEO?,Easy,search engine optimization;ranking;keywords,SEO improves website visibility on search engines using keywords and optimization.
+7,What is social media marketing?,Easy,platforms;engagement;content promotion,Social media marketing uses platforms to engage audiences and promote products.
+8,What is content marketing?,Easy,valuable content;blogs;engagement,Content marketing creates valuable content to attract and retain customers.
+9,What is PPC advertising?,Easy,pay per click;online ads;traffic,PPC is an advertising model where advertisers pay per click on their ads.
+10,What is email marketing?,Easy,newsletter;campaign;customer communication,Email marketing sends targeted messages to customers to promote products.
+11,What is conversion rate?,Easy,leads;sales;percentage,Conversion rate measures percentage of visitors who complete desired actions.
+12,What is marketing funnel?,Easy,awareness;interest;decision;action,Marketing funnel represents stages from awareness to purchase.
+13,What is B2B marketing?,Easy,business customers;enterprise sales;relationship,B2B marketing targets businesses rather than individual consumers.
+14,What is B2C marketing?,Easy,consumer market;retail;mass audience,B2C marketing targets individual consumers.
+15,What is influencer marketing?,Easy,social influence;brand promotion;collaboration,Influencer marketing collaborates with influencers to promote products.
+16,What is ROI in marketing?,Easy,return on investment;profit;cost analysis,ROI measures profitability of marketing campaigns.
+17,What is customer segmentation?,Easy,demographics;behavior;targeting,Customer segmentation divides audience based on shared characteristics.
+18,What is brand positioning?,Easy,unique value;competitive advantage;perception,Brand positioning defines how brand stands out from competitors.
+19,What is lead generation?,Easy,prospects;interest;pipeline,Lead generation attracts potential customers into sales pipeline.
+20,What is call to action?,Easy,CTA;engagement;conversion,Call to action encourages users to take specific action.
+21,What is marketing mix?,Easy,product;price;place;promotion,Marketing mix consists of four Ps product price place and promotion.
+22,What is competitor analysis?,Easy,market research;benchmarking;strategy,Competitor analysis studies competitors strengths and weaknesses.
+23,What is engagement rate?,Easy,likes;shares;interaction,Engagement rate measures audience interaction with content.
+24,What is brand awareness?,Easy,recognition;visibility;recall,Brand awareness measures how familiar customers are with brand.
+25,What is copywriting?,Easy,persuasive writing;ads;conversion,Copywriting creates persuasive content to drive action.
+26,What is remarketing?,Easy,retargeting;ads;previous visitors,Remarketing targets users who previously interacted with brand.
+27,What is organic reach?,Easy,non paid;social media;visibility,Organic reach refers to unpaid audience exposure.
+28,What is customer journey?,Easy,touchpoints;experience;purchase path,Customer journey maps interactions from awareness to purchase.
+29,What is brand loyalty?,Easy,repeat purchase;trust;customer retention,Brand loyalty refers to customers preference and repeat purchases.
+30,What is KPI in marketing?,Easy,metrics;performance tracking;goals,KPI measures marketing performance against goals.
+31,Explain inbound marketing.,Medium,content strategy;lead nurturing;value driven,Inbound marketing attracts customers through valuable content and engagement.
+32,Explain outbound marketing.,Medium,advertising;cold outreach;promotion,Outbound marketing pushes messages directly to customers through ads and outreach.
+33,What is A B testing?,Medium,experiment;optimization;conversion rate,A B testing compares two versions to optimize performance.
+34,How do you measure campaign effectiveness?,Medium,metrics;ROI;conversion rate,Campaign effectiveness is measured using KPIs and ROI analysis.
+35,Explain customer lifetime value.,Medium,CLV;revenue;retention,Customer lifetime value estimates total revenue from a customer.
+36,What is marketing automation?,Medium,tools;email workflows;CRM,Marketing automation uses tools to automate repetitive marketing tasks.
+37,Explain buyer persona.,Medium,customer profile;behavior;targeting,Buyer persona represents ideal customer profile.
+38,What is omnichannel marketing?,Medium,integrated channels;customer experience;consistency,Omnichannel marketing provides seamless experience across channels.
+39,Explain content strategy.,Medium,planning;creation;distribution,Content strategy plans and distributes content aligned with goals.
+40,What is churn rate?,Medium,customer loss;retention;percentage,Churn rate measures percentage of customers lost.
+41,Explain performance marketing.,Medium,data driven;paid ads;ROI focus,Performance marketing focuses on measurable results.
+42,What is affiliate marketing?,Medium,commission;partners;referral,Affiliate marketing rewards partners for driving sales.
+43,Explain brand equity.,Medium,value perception;loyalty;brand strength,Brand equity is added value of brand recognition.
+44,What is CTR?,Medium,click through rate;ads;engagement,CTR measures percentage of clicks on advertisement.
+45,Explain market segmentation strategies.,Medium,demographic;geographic;psychographic,Segmentation strategies divide market into distinct groups.
+46,What is CRM in marketing?,Medium,customer relationship management;data;retention,CRM systems manage customer data and relationships.
+47,Explain viral marketing.,Medium,shareability;organic growth;social media,Viral marketing spreads rapidly through social sharing.
+48,How do you handle negative brand reputation?,Medium,crisis management;communication;PR,Handle reputation issues through transparent communication.
+49,Explain demand generation.,Medium,awareness;lead nurturing;pipeline,Demand generation creates interest and builds sales pipeline.
+50,What is product positioning strategy?,Medium,market differentiation;value proposition;targeting,Product positioning highlights unique value proposition.
+51,Explain pricing strategies.,Medium,competitive pricing;value based;cost based,Pricing strategies determine optimal price based on value and competition.
+52,What is marketing analytics?,Medium,data analysis;performance metrics;insights,Marketing analytics analyzes campaign data to improve results.
+53,Explain growth hacking.,Medium,experimentation;rapid growth;data driven,Growth hacking uses creative experiments to scale quickly.
+54,How do you increase website traffic?,Medium,SEO;content marketing;paid ads,Increase traffic through SEO content and advertising.
+55,Explain influencer campaign strategy.,Medium,collaboration;engagement;reach,Influencer campaigns leverage social reach for brand awareness.
+56,What is retargeting strategy?,Medium,cookie tracking;ads;conversion,Retargeting uses ads to re engage previous visitors.
+57,Explain brand storytelling.,Medium,narrative;emotional connection;engagement,Brand storytelling builds emotional connection with audience.
+58,What is market penetration strategy?,Medium,growth;pricing;promotion,Market penetration increases share in existing markets.
+59,Explain digital advertising platforms.,Medium,google ads;social ads;analytics,Platforms enable paid advertising with performance tracking.
+60,How do you optimize marketing budget?,Medium,ROI analysis;allocation;performance tracking,Optimize budget by focusing on high ROI channels.
+61,Design a go to market strategy.,Hard,market research;positioning;launch plan,Go to market strategy defines launch positioning and execution plan.
+62,How would you increase brand awareness globally?,Hard,localization;multi channel;branding,Global awareness requires localization and multichannel campaigns.
+63,Explain integrated marketing communications.,Hard,consistency;cross channel;brand message,Integrated communications ensure consistent messaging across channels.
+64,How do you measure brand equity?,Hard,surveys;awareness metrics;customer loyalty,Measure brand equity using surveys and loyalty metrics.
+65,Design a full digital marketing campaign.,Hard,planning;execution;analytics;optimization,Campaign includes research planning execution and performance analysis.
+66,How do you enter a competitive market?,Hard,differentiation;pricing;promotion strategy,Enter market through differentiation and strategic pricing.
+67,Explain marketing attribution models.,Hard,first click;last click;multi touch,Attribution models assign credit to different marketing touchpoints.
+68,How do you handle product launch failure?,Hard,analysis;repositioning;customer feedback,Analyze failure gather feedback and reposition product.
+69,Design customer retention strategy.,Hard,loyalty programs;engagement;personalization,Retention strategy includes personalized offers and loyalty programs.
+70,Explain cross cultural marketing strategy.,Hard,localization;market adaptation;cultural awareness,Adapt campaigns to cultural preferences.
+71,How would you rebrand a company?,Hard,market research;new identity;communication,Rebranding involves redefining identity and communicating change.
+72,Explain predictive marketing analytics.,Hard,data modeling;forecasting;segmentation,Predictive analytics uses data models to forecast behavior.
+73,How do you scale marketing operations?,Hard,automation;team structure;technology,Scale operations through automation and process optimization.
+74,Design influencer marketing at scale.,Hard,selection criteria;contracts;tracking,Scale influencer programs with structured selection and analytics.
+75,Explain advanced SEO strategy.,Hard,technical SEO;backlinks;content optimization,Advanced SEO focuses on technical improvements and authority building.
+76,How do you manage marketing crisis?,Hard,PR strategy;communication;brand repair,Manage crisis with quick transparent communication.
+77,Design loyalty program strategy.,Hard,rewards system;engagement;customer value,Loyalty programs incentivize repeat purchases.
+78,Explain omnichannel customer experience.,Hard,seamless integration;data sharing;personalization,Omnichannel integrates data for consistent experience.
+79,How do you forecast sales using marketing data?,Hard,data analysis;trend forecasting;ROI,Forecast sales using trend analysis and campaign data.
+80,Explain marketing ROI improvement plan.,Hard,optimization;cost reduction;performance tracking,Improve ROI by optimizing channels and reducing costs.
+81,Design performance marketing dashboard.,Hard,KPIs;analytics;real time data,Dashboard tracks campaign metrics and performance in real time.
+82,How would you build brand community?,Hard,engagement strategy;content;loyalty,Brand community builds long term customer relationships.
+83,Explain customer acquisition strategy.,Hard,targeting;channel selection;budget allocation,Acquisition strategy focuses on cost effective channels.
+84,How do you evaluate marketing channels?,Hard,attribution;conversion analysis;ROI comparison,Evaluate channels based on performance metrics.
+85,Design subscription growth strategy.,Hard,retention;upselling;personalization,Growth strategy focuses on retention and upsell.
+86,Explain neuromarketing concepts.,Hard,consumer psychology;behavior;emotions,Neuromarketing studies psychological responses to marketing.
+87,How do you leverage data for personalization?,Hard,segmentation;analytics;automation,Use data to create personalized marketing experiences.
+88,Explain marketing scalability challenges.,Hard,budget;automation;global expansion,Scalability requires automation and strategic investment.
+89,How would you optimize multi channel campaigns?,Hard,analytics;cross channel data;optimization,Optimize campaigns using unified data insights.
+90,Explain future trends in marketing.,Hard,AI marketing;automation;data privacy,Future marketing trends include AI driven automation and privacy focus.
